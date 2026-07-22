@@ -44,7 +44,6 @@ What we have currently in mind is
 
 5. Github Repos for project documentation, sourcecode management, templates, user manuals and tutorials, and backend I/O caching till need for speed and scale will require more dedicates solutions.  
 
-
 ### Initial Scope
 We keep the current architectural scope limted to a local App, english, Windows, Markdown, PDF, "HR Open Standards Resume/CV"-Standard etc. on purpose being confident to rollout for different OS, devices, platforms, languages, AI providers, etc. 
 
