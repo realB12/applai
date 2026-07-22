@@ -1,0 +1,277 @@
+<html>
+
+<head>
+<title>Problem Collection (48)</title>
+</head>
+
+<body>
+<font color="#004080" size="6"><strong>
+
+<p align="center"></strong></font><font SIZE="2"><img SRC="images/y2klogo1.gif" WIDTH="67"
+HEIGHT="65"> <img SRC="images/y2klogo2.gif" WIDTH="69" HEIGHT="57"> Checklists</font></p>
+
+<h1 align="center">Problem Collection List</h1>
+
+<p align="center"><font size="1">(KUONI Y2K Certification Methodology&nbsp; / bucSD048.htm
+/ buc / 1998-01-26 / Draft Version 1.0)<br>
+</font></p>
+
+<p align="center"><img src="images/undercon.gif" width="40" height="38"
+alt="undercon.gif (286 bytes)"></p>
+
+<p align="center"><img src="images/menuup.gif" width="30" height="18"
+alt="menuup.gif (359 bytes)"><small><small>&nbsp;&nbsp; <a href="bucSD268.htm">Collection
+Guidelines</a> (268), <a href="#Table of Occurence">Table of Occurence</a> (311)</small></small></p>
+
+<p align="center"><small><small><a href="#Abstract">Abstract</a>,<a
+href="#Problem Collection">Problem Collection</a> (48)</small></small></p>
+
+<p align="center"><small><small><br>
+</small></small></p>
+
+<hr>
+
+<h1 align="left"><a name="Abstract"><font color="#000000">Abstract</font></a></h1>
+
+<p align="left"><font color="#000000">This document contains a collection of
+&nbsp;problems and issues which should be addressed during the detailed item analysis. To
+make the amount of possible problems a little bit more handy, the Programme Office has
+defined <a href="bucsd268.htm">Problem Types (PT)</a> (268) to group the types of problems
+logically. Further each problem in the list has got a uniqe problem collection
+&nbsp; number (PC#<strong><em>)</em></strong> by which the problem can be referenced when
+mentioned in your own problem and item analysis reports.</font></p>
+
+<p align="left"><font color="#000000">Be remainded that the problems' type and collection
+numbers are defined by the Programme Office and must not be modified. This aimes to
+provide global consistentency so that </font><font size="3">real problems which may occure
+in KUONI organisations can be addressed in the global <a href="bucsd311.htm">Table of
+Occurence</a> (311) or in&nbsp; the inventory database (Web2000).</font></p>
+
+<p align="left"><font color="#000000">Please report new problems you would like to add to
+this list via cc-mail to the Y2K Programme Office and keep in mind that the Programme
+Office will update this list regularly. </font></p>
+
+<p align="left"><strong>Note</strong>: <small>Any checklist is NOT, however, a
+specification. The checklist is used to ensure thoroughness and consistency in the
+assessment. It does not indicate completness nor does it constitutes compliance.</small></p>
+
+<hr>
+<b>
+
+<h1 ALIGN="left"><a name="Problem Collection">Problem Collection</a></h1>
+<div align="center"><center>
+
+<table border="1" width="600">
+  <tr>
+    </b><td width="58" align="center"><p align="center"><strong><small>PC#</small></strong></td>
+    <td width="33" align="center"><strong><small>PT</small></strong></td>
+    <td width="33" align="center"><small><strong>R</strong></small></td>
+    <td width="493" align="center"><strong><small>Description</small></strong></td>
+    <td width="32" align="center"><strong><small>V</small></strong></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P001</small></td>
+    <td width="33" align="center"><small>C</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>Many orgnanisations have 'date difference' programs. These programs
+    take various forms but generally fall into the </small><ul>
+      <li><small>How many days (or working days) between date 1 and date 2 </small></li>
+      <li><small>What is the date of date 1 plus n days </small></li>
+    </ul>
+    <p><small>category. Just imagine what happens to them in 1999 or even earlier, if the
+    number of days is more than 365.<br>
+    At least those of you with such programs will get some advance warning of the perils of
+    the year 2000.</small></td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P002</small></td>
+    <td width="33" align="center"><small>A</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493">&nbsp;<p><small>There are also programmers who like to use arrays for years,
+    months or days; perhaps even combinations of them. Often these arrays have an arbitrary
+    'start' date.<br>
+    </small></p>
+    <p><small>An example is that each year is an element in an array.<br>
+    </small></p>
+    <p><small>We NEVER have data before '89 (it's catching this 2 digit year stuff) so we take
+    the year number, subtract 88 and then we have our element number.<br>
+    Another alternative is that we have our data in date order and we take the year contained
+    in the first record minus one and then we use that as the base of our array.<br>
+    Now you must have realised what will happen.<br>
+    </small><ul>
+      <li><small>96-88 gives element number 7,<br>
+        </small></li>
+      <li><small>99-88 gives element number 10,<br>
+        </small></li>
+      <li><small>00-88 gives element number -88 (minus eighty eight).<br>
+        </small><p><small>If you have a program that builds an array of data where the year is
+        used as an index for the array elements, don't forget that it does not have to be in the
+        year number itself, it could be the year and the Julian day number, or the week number
+        used to determine the array element number.<br>
+        You are very likely to find out sometime during 1999 at the latest that you start
+        addressing a non-existant element number except some compilers do not check the number
+        dynamically, they just convert the element to an address and merrily overwrite some other
+        part of storage or attempt to use unallocated storage.<br>
+        Any sensible system wil not allow the second to happen, but no doubt some of the PC
+        operating systems are less efficient at this.<br>
+        </small></p>
+      </li>
+    </ul>
+    </td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P003</small></td>
+    <td width="33" align="center"><small>C</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>what happens when we divide a number by zero or vice versa.</small></td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P004</small></td>
+    <td width="33" align="center"><small>LY</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>Have you ever seen a program which checks if the year number is
+    zero before it devides it by 4</small></td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P005</small></td>
+    <td width="33" align="center"><small>C</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><ul>
+      <li><small>How many days (or working days) between date 1 and date 2 </small></li>
+    </ul>
+    </td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P006</small></td>
+    <td width="33" align="center"><small>C</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><ul>
+      <li><small>What is the date of date 1 plus n days </small></li>
+    </ul>
+    </td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P008</small></td>
+    <td width="33" align="center"><small>C</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>Calculate date for next Friday </small></td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P009</small></td>
+    <td width="33" align="center"><small>C</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>Last working day of the month </small></td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P010</small></td>
+    <td width="33" align="center"><small>C</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>Wrong Calculations with Todays Date </small></td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P011</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>Generation of Timestamp fails since related to a date</small></td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>P012</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>Generation of todays Date fails when the System Clock goes over
+    Year 2000</small></td>
+    <td width="32"><small>1.0</small></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="58" align="center"><small>PO13</small></td>
+    <td width="33" align="center"><small>99</small></td>
+    <td width="33" align="center">&nbsp;</td>
+    <td width="493"><small>One place where all 9's does show up is in the use of a date
+    complement (not<br>
+    compliment, thank you). In this case it is the &quot;inverse&quot; of the date. Date<br>
+    complements are used to reverse sort data so that the most current records<br>
+    are shown at the top on screens and reports. It is commonly used and<br>
+    sometimes all 9's could be compared to show records that should actually be<br>
+    at the bottom of the list. In the case where no date, a &quot;null&quot; date, or a<br>
+    date in the format of 00/00/00 was entered, the possible calculation to<br>
+    produce a &quot;9's complement&quot; would be something like:<br>
+    <br>
+    In non-Y2K Ready format:<br>
+    DATE COMPLEMENT<br>
+    999999 - 980219 = 019780<br>
+    999999 - 000102 = 999897<br>
+    999999 - 000000 = 999999<br>
+    <br>
+    This would force the second date to be sorted AFTER the first (because its<br>
+    value is lower) which would mess up the reason that you were doing a<br>
+    &quot;reverse&quot; sort of putting the &quot;newer&quot; stuff ahead of the old.<br>
+    <br>
+    By getting explicit with the dates, you avoid the problem:<br>
+    DATE COMPLEMENT<br>
+    99999999 - 20000102 = 79999897<br>
+    (this next one might not be a real date but your &quot;windowing&quot; logic will try<br>
+    to convert it to one!!!)<br>
+    99999999 - 20000000 = 79999999<br>
+    99999999 - 19980219 = 80019780<br>
+    <br>
+    So... 9's are out there and you have to watch for this. If you aren't<br>
+    checking for this type of processing, you'd better go back and have another<br>
+    look. The variable names to store the complement may not look like date<br>
+    fields and many find/fix tools may not comprehend what is being done.</small></td>
+    <td width="32">&nbsp;</td>
+    <b>
+  </tr>
+</table>
+</center></div>
+
+<p align="center">&nbsp;</p>
+<font SIZE="2">
+
+<h6 align="center"></font></b>Version Control Problem List Table<b></h6>
+<div align="center"><center>
+
+<table border="1" width="520">
+  <tr>
+    </b><td width="25%" align="center"><strong><small>Version</small></strong></td>
+    <td width="25%" align="center"><strong><small>Lust Update</small></strong></td>
+    <td width="25%" align="center"><strong><small>by</small></strong></td>
+    <td width="25%" align="center"><strong><small>Status</small></strong></td>
+    <b>
+  </tr>
+  <tr>
+    </b><td width="25%" align="center"><small>1.0</small></td>
+    <td width="25%" align="center"><small>1998-02-10</small></td>
+    <td width="25%" align="center"><small>BUC</small></td>
+    <td width="25%" align="center"><small>X</small></td>
+    <b>
+  </tr>
+</table>
+</center></div>
+
+<p align="center"></b><small>Status: <strong>OK</strong> = Valid, <strong>X</strong> = not
+yet valid, under construction</small><b></p>
+</b>
+</body>
+</html>

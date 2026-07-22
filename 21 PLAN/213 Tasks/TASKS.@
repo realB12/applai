@@ -1,0 +1,2 @@
+contains a temporary directory for every clearly defined TASK or SUBPROJECT which is part of the overall project. These subdirectories hold a discription of this Task and all files and documents which are needed to complete these tasks.
+Please note that the contents of this "TASK" directory has just a temporary meaning for the reason that when the Process for the taks is final and so are all the related documents, then these files will be moved to the global FILES bzw. PUBLIC Directory.
