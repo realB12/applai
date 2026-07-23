@@ -5,7 +5,7 @@
 ---
 
 ## Overview
-The **HR Open Standards Consortium**  provided **[Resumé/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/)** defines data and processings around individual qualifications along the recruiting process.
+The **HR Open Standards Consortium**  provided **[Resumé/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/)** is a recruiting data exchange standard that enables communication of a rich set of information about a person and their education, work experience, licenses and certifications, and other lived experiences between systems for primarily recruiting use cases.
 
 This includes information about **education, work experience, licenses, certifications, and other relevant experiences** across various employer recruitment systems. 
 
