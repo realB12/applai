@@ -1,8 +1,23 @@
 # ApplAI Project Log from Wednesday July 23rd, 2026
 
-
 ## Prompts
 * What are the standard keywords ATS are looking for in resumes
+
+* Give me the most extensive data-model for storing skills, experiences and certificates that can be used to compile ATS compliant resumes and cover letters.   
+Comply with international standards such as "HR Open Consortium" or the new TCP standard when possible. Otherwise follow best practice. 
+Represent the datamodel in UML format
+
+## Actions done
+-> created myCV folder with some draft template files for the generation of resumes: [_myCV_Atomic data for jop appliance artefacts](../../04%20MODEL/02%20DATA/CV/myCV/_myCV_Atomic%20data%20for%20jop%20appliance%20artefacts.md)
+
+
+
+## Key Lessons learned
+* ATS will scan for skill-related keywords to primarelycheck whether teir job offer matches with resumees. So when they are looking for  a "Project Office Manager" they will look for "Project Office Manager" in your CV. SOO bloody simple!
+
+-> So I can afford a certain level of **pragmatisem when defining my MetaLevel keywords for my mardown formatted skills.md and experiece.md files**.  
+
+* Next level ATS will try to find to extract skills and experiences on the atomic level where they finally can look for gaps, context, inconsistencies, general sense and other patterns beyond isolated skills and experiences. 
 
 ## Single Source Data Format
 One of the key modules is the Single Source of Resume-relevant data from which all Resumes, CoverLetters etc. shall be generated. It must provide the following characteristica / Requirements: 

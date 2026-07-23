@@ -3,7 +3,7 @@
 Nowadays most Resumee are primarely scanned by ATS for two different reasons: 
 1. **Resumee Keywords** that match those in the Job Description: the more match, the higher the probability your CV is not rejected.   
 
-2. **MetaWords** required to guess the Structure of your Resume to fill their databases with your atomic skills and experiences. 
+2. **MetaWords** required to guess the Structure of your Resume to fill recruiting databases with your atomic skills and experiences and will look for CV gaps and inconsistencies. 
 
 ## What Are Keywords in a Resume?
 Resume keywords are specific words or phrases that relate to a job’s qualifications, skills, and industry-specific terminology. They help applicant tracking systems (ATS) and recruiters quickly identify relevant candidates by scanning resumes for these targeted terms. 
