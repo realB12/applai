@@ -14,7 +14,10 @@ In this sense this document is the most up to date Single Point of entry (SPE) d
 Automatically generate a job application from the job-offer's URL and the organisational framework and tasks for its efficient follow up and management. 
 
 ## The Problem to be solved
-We are still today spending hours typing our resumes over and over again - sometimes from scratch with important stuff hard to remember and - even more important - to verify.
+1. **No central storage repository to compile from**: We are still today spending **hours typing our resumes over and over again** - sometimes from scratch with important **stuff hard to remember** and - even more importantly - to verify.
+
+2. Although LinkedIn or "[HR Open Standards Organisation](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provide extensive standards for how such data should be stored, they are over-complex for ordinary requirements without frameworks and tools available to efficiently work with those standards. 
+
 
 ## Goals
 Provide a local GitHub backuped folder with all your resumee relevant data in well structured, atomic Markdown files you will never lose and from where you can generate nice human readable resumes and cover letters as well as data complete, ATS-standards-compliant artefacts to 
