@@ -4,7 +4,9 @@
 
 ---
 
-You can tell JSON Resume is built by developers, for developers. In addition to the JSON schema, the ecosystem includes:
+The 100% Open Sourced and therefore free JSON Resume Framework is built by developers for developers. 
+
+In addition to the JSON schema, the ecosystem includes:
 
 * Command Line Interface (CLI)
 * Export utilities

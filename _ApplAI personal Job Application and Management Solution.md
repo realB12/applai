@@ -13,14 +13,23 @@ In this sense this document is the most up to date Single Point of entry (SPE) d
 ## Vision Statement
 Automatically generate a job application from the job-offer's URL and the organisational framework and tasks for its efficient follow up and management. 
 
+## The Problem to be solved
+We are still today spending hours typing our resumes over and over again - sometimes from scratch with important stuff hard to remember and - even more important - to verify.
+
 ## Goals
-* **Auto-apply for different roles from a single, locally maintained data-source**.   
+Provide a local GitHub backuped folder with all your resumee relevant data in well structured, atomic Markdown files you will never lose and from where you can generate nice human readable resumes and cover letters as well as data complete, ATS-standards-compliant artefacts to 
 
-* From this source **generate ATS-optimized AND HR readable appliance documents** in parallel.  
+* **Auto-apply for different roles by just providing the jog-offer's URL
 
-* Provide **adapters for (AI-) 3rd party tools** to cover language, cultural, industry and role specific HR and job interview requirements.  
+* **generate ATS-optimized AND HR readable appliance documents** in parallel.
 
-* **Keep your CV-data private** and share it only with those how need in a way that data-leaks on receiver-side could be tracked back to the receiver (trust is ok, checking is better).   
+* provide **adapters for (AI-) 3rd party tools** to cover language, cultural, industry and role specific HR and job interview requirements.  
+
+* **keep your CV-data private** and share it only with those how need in a way that data-leaks on receiver-side could be tracked back to the receiver (trust is ok, checking is better).  
+
+* **prevent data-loss** upon integrated GitHub-versioning and Backup File-Synchronization 
+
+* motivate ongoing completion of work-records upon regular eMail and social media reminders 
 
 ## Standards (solid)
 Right from the beginning we want to comply with industry standards such  
