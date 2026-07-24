@@ -8,7 +8,9 @@ Comply with international standards such as "HR Open Consortium" or the new TCP 
 Represent the datamodel in UML format
 
 ## Actions done
--> created myCV folder with some draft template files for the generation of resumes: [_myCV_Atomic data for jop appliance artefacts](../../04%20MODEL/02%20DATA/CV/myCV/_myCV_Atomic%20data%20for%20jop%20appliance%20artefacts.md)
+-> created **myCV folder** with some draft template files for the generation of resumes: [_myCV_Atomic data for jop appliance artefacts](../../04%20MODEL/02%20DATA/CV/myCV/_myCV_Atomic%20data%20for%20jop%20appliance%20artefacts.md)
+
+I am really not sure wether to store my actual CV data in the TCP standardized JSON format (-> 
 
 
 
