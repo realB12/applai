@@ -36,16 +36,9 @@ Provide a local GitHub backuped folder with all your resumee relevant data in we
 
 * **Stability**: The here implied data-**standards must not be changed over time**
 
-## Standards (solid)
-Right from the beginning we want to comply with industry standards such  
 
-* using **Markdown (*.md)** for editable and **PDF** for non-editable documents (from where other formats can be generated when required (such as MS-Office docs databases, Excel Sheets, etcs. )  
-
-* using **JSON** format for anything related to structured data  
-
-* comply with [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/) to provide ATS neutrality (where it makes sense, otherwise deviations will be marked). 
-
-* relay on [JSON Resume](GLOSS/J/JSON%20Resume.md) when it comes to apps,  tools and community to be built around the data.
+### Open Source
+The schema is open source and community-driven. We release everything we do under the MIT license.
 
 ## Architecture (draft) 
 What we have currently in mind is  
@@ -59,6 +52,9 @@ What we have currently in mind is
 4. a **BackendServer** to dispatch job-requests from all local Apps. 
 
 5. Github Repos for project documentation, sourcecode management, templates, user manuals and tutorials, and backend I/O caching till need for speed and scale will require more dedicates solutions.  
+
+## Design Principles
+to keep data-structure close to HR Open's new TCP-standard without dealing with its overall comoplexity we will keep its components such as experiences, skills etc. in separate files and will therefore work on a more atomic level from where resumes will be dynamically compiled from scratch rather than dealt with as whole.   
 
 ### Initial Scope
 We keep the current architectural scope limted to a local App, english, Windows, Markdown, PDF, "HR Open Standards Resume/CV"-Standard etc. on purpose being confident to rollout for different OS, devices, platforms, languages, AI providers, etc. 
@@ -74,6 +70,23 @@ Completed a Perplexity Skill that creates a copy and a summary document from a j
 ## Next Steps (ongoing) 
 1. Finalize the [**Specs for** the personal CV related **SourceData**]() to according to [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/).
 
+# Appendix
 
+## Standards (solid)
+Right from the beginning we want to comply with industry standards such  
+
+* using **Markdown (*.md)** for editable and **PDF** for non-editable documents (from where other formats can be generated when required (such as MS-Office docs databases, Excel Sheets, etcs. )  
+
+* using **JSON** format for anything related to structured data.  
+
+* comply with [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/) to provide ATS neutrality (where it makes sense, otherwise deviations will be marked). 
+
+* relay on [JSON Resume](GLOSS/J/JSON%20Resume.md) when it comes to apps,  tools and community to be built around the data.
+
+
+### Why JSON?
+We believe that the strengths of the JSON format makes it a good fit for resumes. It's lightweight, easy to use and it's perfect to build tools for!
+
+We also feel that the JSON Schema is mature enough for writing usable semantics. 
 
 
