@@ -12,12 +12,9 @@ In this sense this document is the most up to date **Single Point of entry (SPE)
 
 ## Current Project STATUS = ON HOLD
 
-1. Currently the project can **download a job-offer upon the given in URL** and **save it as an image, PDF and a summary markdown-file in an automatically generated GitRepo** from where the files and folders are downloaded to the local machine where the job has been startet. 
+->  **[Current Project STATUS](#project-status) Description** 
 
-2. We have investigated the [HR Open Standards Consortium](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provided [TCP-JSON Standard]() and found it useful as a state of the art and future proof reference for our own data Standard. However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard more hands-on, practical and with its established ecosystem (e.g the "[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) ways more readymade applicable and therefore immediately useful. 
-
-3. We have found the [Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) Open Source WebApp quite promising  to be used to efficiently create the required [JSON Resume](GLOSS/J/JSON%20Resume.md)-data with a user-friendly, everbody can do GUI (whereas editing JSON directly we consider even for developers too nerdy, errorprown and painstakingly hard when dealing with longer DVs beyond 50 positions).  
-
+-> **[Next Steps](#next-steps)**
 
 
 ## Vision Statement
@@ -74,11 +71,19 @@ However the goal is not to provide a customizable architecture but to deliver ON
 
 Scaling will be done in the background and will remain on our shoulders. 
 
-## Current Project Status
-Completed a Perplexity Skill that creates a copy and a summary document from a job offer URL. 
+## Project STATUS
 
-## Next Steps (ongoing) 
-1. Finalize the [**Specs for** the personal CV related **SourceData**]() to according to [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/).
+1. Currently the project can **download a job-offer upon the given in URL** and **save it as an image, PDF and a summary markdown-file in an automatically generated GitRepo** from where the files and folders are downloaded to the local machine where the job has been startet. 
+
+2. We have investigated the [HR Open Standards Consortium](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provided [TCP-JSON Standard]() and found it useful as a state of the art and future proof reference for our own data Standard. However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard more hands-on, practical and with its established ecosystem (e.g the "[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) ways more readymade applicable and therefore immediately useful. 
+
+3. We have found the [Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) Open Source WebApp quite promising  to be used to efficiently create the required [JSON Resume](GLOSS/J/JSON%20Resume.md)-data with a user-friendly, everbody can do GUI (whereas editing JSON directly we consider even for developers too nerdy, errorprown and painstakingly hard when dealing with longer DVs beyond 50 positions).  
+
+## Next Steps
+1. Generate and finalize a reference CV with the [Reactive Resume WebApp](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md), export the data in [JSON Resume Format](GLOSS/J/JSON%20Resume.md) and then decide how to integrate it into the Overall [ApplAI Project/Framework](_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md) or wether to engage with the [JSON Resume Open  Source](GLOSS/J/JSON%20Resume.md) and compile the missing stuff from there. 
+
+1. Finalize the [**Specs for** the personal CV related **SourceData**]()  according to [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/).
+
 
 # Appendix
 
