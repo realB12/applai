@@ -11,10 +11,13 @@
 
 * [HR Open Standards Organisation](../H/HR%20Open%20Standards%20Organisation.md)
 
+* [BLOG](https://jsonresume.org/blog)
 
 ---
 
 JSON Resume is an open-source initiative to create a standard, JSON-based schema for resumes. Write your resume once as JSON, then render it with any of hundreds of community themes, host it for free, and export it to HTML, PDF, and more — no lock-in, no proprietary formats.
+
+However, the project seems to be abondend in 2019
 
 With JSON Resume, you can:
 
@@ -23,8 +26,6 @@ With JSON Resume, you can:
 * Render your resume with dozens of community-built themes
 * Validate your resume against the JSON Resume schema
 * Leverage AI-powered tools to help with your job search
-
-
 
 However, it is primarely built for developers who are easy with putting their data into JSON files and compiling from the command line (GUIs are still waiting to be implemented by somebody some day).   
 

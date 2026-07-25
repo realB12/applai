@@ -4,14 +4,24 @@
 ---
 This documents provides 
 
-> **the Full Project Outline**
+> **the Full AppAI Project Outline**
 
 In this sense this document is the most up to date **Single Point of entry (SPE) document** for whatever is going on in this ApplAI Project, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary that might not be aligned to this document on purpose (to keep general communication simplified and stable). 
 
 ---
 
+## Current Project STATUS = ON HOLD
+
+1. Currently the project can **download a job-offer upon the given in URL** and **save it as an image, PDF and a summary markdown-file in an automatically generated GitRepo** from where the files and folders are downloaded to the local machine where the job has been startet. 
+
+2. We have investigated the [HR Open Standards Consortium](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provided [TCP-JSON Standard]() and found it useful as a state of the art and future proof reference for our own data Standard. However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard more hands-on, practical and with its established ecosystem (e.g the "[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) ways more readymade applicable and therefore immediately useful. 
+
+3. We have found the [Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) Open Source WebApp quite promising  to be used to efficiently create the required [JSON Resume](GLOSS/J/JSON%20Resume.md)-data with a user-friendly, everbody can do GUI (whereas editing JSON directly we consider even for developers too nerdy, errorprown and painstakingly hard when dealing with longer DVs beyond 50 positions).  
+
+
+
 ## Vision Statement
-Automatically generate a job application from the job-offer's URL and the organisational framework and tasks for its efficient follow up and management. 
+Automatically generate a job application resume and cover-letter from the job-offer's URL plus the organisational framework (such as a Git Repo) and tasks (such as sending the resume) for its efficient follow up and management. 
 
 ## The Problem to be solved
 1. **No central storage repository to compile from**: We are still today spending **hours typing our resumes over and over again** - sometimes from scratch with important **stuff hard to remember** and - even more importantly - to verify.
