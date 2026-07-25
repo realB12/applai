@@ -14,6 +14,8 @@ Automatically generate a job application from the job-offer's URL and the organi
 
 * **Keep your CV-data private** and share it only with those how need in a way that data-leaks on receiver-side could be tracked back to the receiver (trust is ok, checking is better).   
 
+* **Stability**: The here implied data-**standards must not be changed over time**
+
 ## Standards
 Right from the beginning we want to comply with industry standards such  
 

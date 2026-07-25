@@ -3,6 +3,8 @@
 
 * [HR Open Standards Organisation](../../../GLOSS/H/HR%20Open%20Standards%20Organisation.md)
 
+* [JSON Resume](../../../GLOSS/J/JSON%20Resume.md)
+
 ---
 This folder contains the **DATA Schemas for representing everything [CV](../../01%20ENTITY/C/CV.md) related**. 
 
@@ -12,7 +14,7 @@ This folder contains the **DATA Schemas for representing everything [CV](../../0
 > **There should be a global resume template, and you should be able to transmit it as JSON directly into the ATS.**
 
 ## Goals
-The goal of this aatacollection is to serve as my **personal source of work related history data** (experiences, employments, employers, artefacts, evidence, ...) from which future human readable resumes and cover letters and ATS compliant work-records can be compiled. 
+The goal of this datacollection is to serve a lasting (must not change ofer time) **personal source of work related history data** (experiences, employments, employers, artefacts, evidence, ...) from which human readable, nicely formatted and compressed to the essential resumes and cover letters as well as fully complete, ATS compliant records can be compiled. 
 
 ## Standards
 When ever possible the data structure shall **align to the "[HR Open Standards / TCP" concepts](../../../GLOSS/H/HR%20Open%20Standards%20Organisation.md)** for ATS interoperability, but with an **additional evidence-and-targeting layer** that will be required to generate ATS-friendly resumes and tailored cover letters without losing provenance or verification detail. 

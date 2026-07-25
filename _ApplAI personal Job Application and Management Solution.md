@@ -32,7 +32,9 @@ Provide a local GitHub backuped folder with all your resumee relevant data in we
 
 * **prevent data-loss** upon integrated GitHub-versioning and Backup File-Synchronization 
 
-* motivate ongoing completion of work-records upon regular eMail and social media reminders 
+* Send reminders to motivate ongoing work review, updates and adding new experiences on a monthly bases. 
+
+* **Stability**: The here implied data-**standards must not be changed over time**
 
 ## Standards (solid)
 Right from the beginning we want to comply with industry standards such  
@@ -42,6 +44,8 @@ Right from the beginning we want to comply with industry standards such
 * using **JSON** format for anything related to structured data  
 
 * comply with [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/) to provide ATS neutrality (where it makes sense, otherwise deviations will be marked). 
+
+* relay on [JSON Resume](GLOSS/J/JSON%20Resume.md) when it comes to apps,  tools and community to be built around the data.
 
 ## Architecture (draft) 
 What we have currently in mind is  
