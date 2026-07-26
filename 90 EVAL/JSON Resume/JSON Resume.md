@@ -1,10 +1,30 @@
-# JSON Resume Ecosystem (GLOSSAR)
+# JSON Resume Ecosystem
 
-* [JSON Resume **Details**](../../90%20EVAL/JSON%20Resume/JSON%20Resume.md)
+* [JSON Resume im **GLOSSAR**](../../GLOSS/J/JSON%20Resume.md)
+
+* [HompePage](https://jsonresume.org/)
+
+* [on GitHub](https://github.com/jsonresume/jsonresume.org)
+
+* [Documentation](https://jsonresume.org/docs)
+
+* [Schema](https://github.com/jsonresume/resume-schema)
+
+* [CLI](https://github.com/jsonresume/resume-cli)
+
+* [HR Open Standards Organisation](../H/HR%20Open%20Standards%20Organisation.md)
+
+* [BLOG](https://jsonresume.org/blog)
+
+---
 
 JSON Resume is a a wide accepted open-source JSON Schema for resumes that comes with a set of 3rd-party tools to render it with any of hundreds of community themes, host it for free, and export it to HTML, PDF, and more.
 
-However, the core project seems to be abondend in 2019 whereas its commuity and apps building on this standard are still alive. 
+However, the core project seems to be abondend in 2019 whereas its commuity and apps building on this standard are still alive, including 
+
+* [Reactive Resume](../Reactive%20Resume/_Reactive%20Resume.md) a professional looking Wysiwyg Resume Editor with [JSON Resume](JSON%20Resume.md) export
+
+* [resume ng](../resume-ng.md): a pragmatic YAML-generator that demonstrates efficient use of the YAML-format for resumes.
 
 With JSON Resume, you can:
 

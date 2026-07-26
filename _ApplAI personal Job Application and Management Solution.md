@@ -71,18 +71,29 @@ However the goal is not to provide a customizable architecture but to deliver ON
 
 Scaling will be done in the background and will remain on our shoulders. 
 
+### YAML over JSON
+![Y A M Lvs J S O N](./zPIC/YAMLvsJSON.png): To keep the final CV-Data in YAMAL format is more consise, easier to read, edit and less error-prone than JSON when working manually on it.
+
+Many tools currently are available to translate YAML into JSON and vice versa. 
+
 ## Project STATUS
 
 1. Currently the project can **download a job-offer upon the given in URL** and **save it as an image, PDF and a summary markdown-file in an automatically generated GitRepo** from where the files and folders are downloaded to the local machine where the job has been startet. 
 
 2. We have investigated the [HR Open Standards Consortium](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provided [TCP-JSON Standard]() and found it useful as a state of the art and future proof reference for our own data Standard. However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard more hands-on, practical and with its established ecosystem (e.g the "[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) ways more readymade applicable and therefore immediately useful. 
 
-3. We have found the [Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) Open Source WebApp quite promising  to be used to efficiently create the required [JSON Resume](GLOSS/J/JSON%20Resume.md)-data with a user-friendly, everbody can do GUI (whereas editing JSON directly we consider even for developers too nerdy, errorprown and painstakingly hard when dealing with longer DVs beyond 50 positions).  
+3. We have found the **[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md)** Open Source WebApp quite promising  to be used to efficiently create the required [JSON Resume](GLOSS/J/JSON%20Resume.md)-data with a user-friendly, everbody can do GUI (whereas editing JSON directly we consider even for developers too nerdy, errorprown and painstakingly hard when dealing with longer DVs beyond 50 positions).  
+
+4. An alternative Resume-Generator called [resume-ng](https://github.com/bn3t/resume-ng(example on https://github.com/bn3t/resume-ng) I have considered as a valid and pragmatic alternative that generates a really nice output. However I do not trust its stability over time as its seems to be just for personal use by the developer (no other contributors on the project) than a living "standard". 
+
+5. Found YAML format a better than JSON
+![Y A M Lvs J S O N](./zPIC/YAMLvsJSON.png): its easier to edit manually, more readable and less error-prone than JSON. Many tools are available to translate YAML into JSON and vice versa. 
+
 
 ## Next Steps
-1. Generate and finalize a reference CV with the [Reactive Resume WebApp](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md), export the data in [JSON Resume Format](GLOSS/J/JSON%20Resume.md) and then decide how to integrate it into the Overall [ApplAI Project/Framework](_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md) or wether to engage with the [JSON Resume Open  Source](GLOSS/J/JSON%20Resume.md) and compile the missing stuff from there. 
+1. **Generate and finalize a reference CV** with the [Reactive Resume WebApp](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md), export the data in [JSON Resume Format](GLOSS/J/JSON%20Resume.md) and then decide how to integrate it into the Overall [ApplAI Project/Framework](_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md) or wether to engage with the [JSON Resume Open  Source](GLOSS/J/JSON%20Resume.md) and compile the missing stuff from there. 
 
-1. Finalize the [**Specs for** the personal CV related **SourceData**]()  according to [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/).
+2. Finalize the [**Specs for** the personal CV related **SourceData**]()  according to [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/).
 
 
 # Appendix
