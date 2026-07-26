@@ -71,8 +71,8 @@ However the goal is not to provide a customizable architecture but to deliver ON
 
 Scaling will be done in the background and will remain on our shoulders. 
 
-### YAML over JSON
-![Y A M Lvs J S O N](./zPIC/YAMLvsJSON.png): To keep the final CV-Data in YAMAL format is more consise, easier to read, edit and less error-prone than JSON when working manually on it.
+### YAML over JSON (-> [D002](09%20DECISIONS/000-010/D002_YAML%20over%20JSON.md))
+To keep the final CV-Data in YAMAL format is more consise, easier to read, edit and less error-prone than JSON when working manually on it.
 
 Many tools currently are available to translate YAML into JSON and vice versa. 
 

@@ -2,6 +2,11 @@
 
 ![Robot Reading C V](./zPIC/RobotReadingCV.png)
 
+## Current Project STATUS
+
+
+<p style="color:red; font-weight:bold; text-align: center; width: 20%;">**!! ON HOLD !!**</p>:
+
 ## Vision Statement
 Automatically generate a job application from the job-offer's URL and the organisational framework and tasks for its efficient follow up and management.
 
