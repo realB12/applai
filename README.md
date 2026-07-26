@@ -5,7 +5,9 @@
 ## Current Project STATUS
 
 
-<p style="color:red; font-weight:bold; text-align: center; width: 20%;">**!! ON HOLD !!**</p>:
+<p style="color:red; font-weight:bold; text-align: center; width: 20%;">**!! ON HOLD !!**</p>
+
+-> **Details** in the **[ApplAI SPE Doc](_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md)**
 
 ## Vision Statement
 Automatically generate a job application from the job-offer's URL and the organisational framework and tasks for its efficient follow up and management.
