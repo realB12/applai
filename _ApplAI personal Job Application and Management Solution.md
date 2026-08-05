@@ -1,4 +1,4 @@
-# ApplAI: a personal, AI automated Job Application & Management Solution
+# ApplAI: a personal, AI automated Job Application & Management Solution for Job-Seekers
 <- [ReadMe](README.md)
 
 ---
@@ -6,7 +6,7 @@ This documents provides
 
 > **the Full AppAI Project Outline**
 
-In this sense this document is the most up to date **Single Point of entry (SPE) document** for whatever is going on in this ApplAI Project, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary that might not be aligned to this document on purpose (to keep general communication simplified and stable). 
+In this sense, this document is the most up to date **Single Point of entry (SPE) document** for whatever is going on in this ApplAI Project, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary that might not be aligned to this document on purpose (to keep general communication simplified and stable). 
 
 ---
 
@@ -18,18 +18,17 @@ In this sense this document is the most up to date **Single Point of entry (SPE)
 
 
 ## Vision Statement
-Automatically generate a job application resume and cover-letter from the job-offer's URL plus the organisational framework (such as a Git Repo) and tasks (such as sending the resume) for its efficient follow up and management. 
+Automatically **generate a job application resume and an associated cover-letter** from the job-offer's URL plus the organisational framework (e.g. associated Git Repo) and tasks (e.g "sending the resume") for its efficient follow up and learning from it for next applications.
 
 ## The Problem to be solved
-1. **No central storage repository to compile from**: We are still today spending **hours typing our resumes over and over again** - sometimes from scratch with important **stuff hard to remember** and - even more importantly - to verify.
+1. **No private storage repository to compile from**: We are still today spending **hours typing our resumes over and over again** into (online-)systems we do not control and where we are never sure where our most private data is going to. And even when we could re-use such data  we forget them over the years or have cancelled the membership or lost the crendentials to login abain. 
 
-2. Although LinkedIn or "[HR Open Standards Organisation](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provide extensive standards for how such data should be stored, they are over-complex for ordinary requirements without frameworks and tools available to efficiently work with those standards. 
+2. Although LinkedIn or "[HR Open Standards Organisation](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provide extensive standards for how such resume related data should be stored, they are built for the employer side and therefore are too complex for ordinary job seers requirements and currently do not provide frameworks nor tools to to efficiently work with those standards. 
 
+## Project Goals
+Provide a local, GitHub-backuped folder with all your resumee relevant data stored in well structured, atomic Markdown files you will never loose and from where you can generate nice human readable resumes and cover letters, as well as data-complete, ATS-standards-compliant artefacts to 
 
-## Goals
-Provide a local GitHub backuped folder with all your resumee relevant data in well structured, atomic Markdown files you will never lose and from where you can generate nice human readable resumes and cover letters as well as data complete, ATS-standards-compliant artefacts to 
-
-* **Auto-apply for different roles by just providing the jog-offer's URL
+* **Auto-apply for different job roles** by just providing the job-offer's URL
 
 * **generate ATS-optimized AND HR readable appliance documents** in parallel.
 
@@ -45,46 +44,47 @@ Provide a local GitHub backuped folder with all your resumee relevant data in we
 
 
 ### Open Source
-The schema is open source and community-driven. We release everything we do under the MIT license.
+the here provided data-schema and tools are and will remain open source and community-driven. We release everything we do under the MIT license.
 
 ## Architecture (draft) 
 What we have currently in mind is  
 
 1. a **local GUI-App for Windows** (.NET C# in Visual Studio Code + Exensions)  
 
-2. Using the best **"money for performance" AI-services** in the background (which are reviewed and might change within a month's notice)
+2. Using the best **"money for performance" AI-services** in the background (which are regularely reviewed for performance, stability, costs and data security and might change or switched to prepared alternatives within a month's notice)
  
-3. a minimal **Sales-WebApp** for advertisments, purchasing, downloading and servicing the solutionk (most probably a vibe-copiloted Single Page Application (SPA) built with Microsoft .NET Tech in VSC Editor) 
+3. a minimal **Sales-WebApp** for advertisements, purchasing, downloading and servicing the solution (most probably a vibe-copiloted Single Page Application (SPA) built with Microsoft .NET Tech in VSC Editor) 
 
-4. a **BackendServer** to dispatch job-requests from all local Apps. 
+4. a **BackendServer** to dispatch job-requests from all local ApplAI-Apps. 
 
 5. Github Repos for project documentation, sourcecode management, templates, user manuals and tutorials, and backend I/O caching till need for speed and scale will require more dedicates solutions.  
 
 ## Design Principles
-to keep data-structure close to HR Open's new TCP-standard without dealing with its overall comoplexity we will keep its components such as experiences, skills etc. in separate files and will therefore work on a more atomic level from where resumes will be dynamically compiled from scratch rather than dealt with as whole.   
+to keep data-structure close to [HR Open's new TCP-standard]() reduced to what we reall need (and therefore not dealing with its full complexity), we will keep the job-data components such as job-experiences, skills etc. in separate files and will therefore work on a more atomic level from where resumes will be dynamically compiled from scratch rather than having ALL data in a single file.
 
-### Initial Scope
-We keep the current architectural scope limted to a local App, english, Windows, Markdown, PDF, "HR Open Standards Resume/CV"-Standard etc. on purpose being confident to rollout for different OS, devices, platforms, languages, AI providers, etc. 
+### Initial Scope and Evolutionary Steps
+We keep the current architectural scope limted to a local App, english, Windows, Markdown, PDF, "HR Open Standards Resume/CV"-Standard etc. on purpose. However, we are confident than when the first prototype finds acceptance to rollout for different OS, devices, platforms, languages, AI providers, etc. 
 
 ### Architectural Stability and Change Requests
-However the goal is not to provide a customizable architecture but to deliver ONE or several ready made boxed and therefore - concerning architecture - non further customizable-solutions. In this sense, input on architectural design and change is still welcome but we reserve the right to decide alone what currently works best for us as we do not like to switch/change our own platform upon change requests. 
+However, the goal is NOT to provide a monolythic, customizable everything fits to everyone architecture, but to deliver initially ONE and in the futrue several customized ready made boxed and therefore - concerning architecture - non further customizable-solutions. In this sense, input on architectural design and change is always welcome, but we reserve the right to decide alone, what currently works best for us,  as we do not like to switch/change our own platform upon change requests. 
 
-Scaling will be done in the background and will remain on our shoulders. 
+Scaling of the backend will be done in the background and will remain on our shoulders - technically and financially. 
 
 ### YAML over JSON (-> [D002](09%20DECISIONS/000-010/D002_YAML%20over%20JSON.md))
-To keep the final CV-Data in YAMAL format is more consise, easier to read, edit and less error-prone than JSON when working manually on it.
+To keep the final CV-Data in YAML format is more consise, easier to read and to edit and finally is less error-prone than JSON when working MANUALLY on it.
 
 Many tools currently are available to translate YAML into JSON and vice versa. 
 
 ## Project STATUS
 
-1. Currently the project can **download a job-offer upon the given in URL** and **save it as an image, PDF and a summary markdown-file in an automatically generated GitRepo** from where the files and folders are downloaded to the local machine where the job has been startet. 
+1. Currently the project can **download a job-offer upon the given in URL** and **save it as an (screenshot-)image, PDF and a summary markdown-file in an automatically generated, job-offer specific GitRepo** from where the files and folders are then automatically downloaded to the local machine from where the ApplAI-App was launched. 
 
-2. We have investigated the [HR Open Standards Consortium](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provided [TCP-JSON Standard]() and found it useful as a state of the art and future proof reference for our own data Standard. However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard more hands-on, practical and with its established ecosystem (e.g the "[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) ways more readymade applicable and therefore immediately useful. 
+2. We have investigated the [HR Open Standards Consortium](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provided [TCP-JSON Standard]() and found it useful as a state of the art and future proof reference for our own data standard.   
+However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard more hands-on, practical and with its established ecosystem (e.g the "[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) ways more readymade, applicable and therefore immediately useful. 
 
 3. We have found the **[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md)** Open Source WebApp quite promising  to be used to efficiently create the required [JSON Resume](GLOSS/J/JSON%20Resume.md)-data with a user-friendly, everbody can do GUI (whereas editing JSON directly we consider even for developers too nerdy, errorprown and painstakingly hard when dealing with longer DVs beyond 50 positions).  
 
-4. An alternative Resume-Generator called [resume-ng](https://github.com/bn3t/resume-ng(example on https://github.com/bn3t/resume-ng) I have considered as a valid and pragmatic alternative that generates a really nice output. However I do not trust its stability over time as its seems to be just for personal use by the developer (no other contributors on the project) than a living "standard". 
+4. An alternative Resume-Generator called [resume-ng](https://github.com/bn3t/resume-ng(example on https://github.com/bn3t/resume-ng) I have considered as a valid and pragmatic alternative that generates really nice output. However I do not trust its stability over time, as it seems to be just for personal use for its  developer (no other contributors on the project). 
 
 5. Found YAML format a better than JSON
 ![Y A M Lvs J S O N](./zPIC/YAMLvsJSON.png): its easier to edit manually, more readable and less error-prone than JSON. Many tools are available to translate YAML into JSON and vice versa. 
