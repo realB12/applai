@@ -115,4 +115,6 @@ We believe that the strengths of the JSON format makes it a good fit for resumes
 
 We also feel that the JSON Schema is mature enough for writing usable semantics. 
 
+### Why YAML?
+Whereas JSON is the de facto standard or WebApps, YAML is easier to read and edit MANUALLY. Wehre we will use JSON for machine2machine conversations, we will use YAML for everything visible and editable to the human eye. 
 
