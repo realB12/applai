@@ -1,4 +1,4 @@
-# ApplAI: AI driven Job Applications that compiles great for ATS AND the human eye. 
+# ApplAI :: AI generated Job Applications great for ATS AND the human eye 
 
 ![Robot Reading C V](./zPIC/RobotReadingCV.png)
 
