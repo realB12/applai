@@ -2,7 +2,7 @@
 This folder contains
 
 * Goals and Purpose of the project
-* Final product and feature descriptions (Stakeholder Requirements and Constraints)
+* Final product and feature descriptions (Stakeholder [Requirements](2%20SPECS/1%20REQ/_Requirements.md) and Constraints)
 * Screens
 * End-User Requirements
 

@@ -22,3 +22,5 @@ Ultimately, the Resumé/CV Project aims to connect elements of the learn-and-wor
 
 * https://www.t3networkhub.org/post/ler-rs-evolving-the-traditional-resume
 
+## What it means for the ApplAI project
+Most proabably HR Open Standard is too much for the scope of the current project and the equally established [JSON Resume](../../90%20EVAL/JSON%20Resume/JSON%20Resume.md) might be a better joice because it is more practical and in the scope of our end-user project whereas  the [HR Open Standard - HOPS](../../04%20MODEL/02%20DATA/xSTANDARDS/HR%20Open%20Standard%20-%20HOPS.md) is more aimed at the employer side with a mutch larger scope than we actually need on the job-seeking side. 

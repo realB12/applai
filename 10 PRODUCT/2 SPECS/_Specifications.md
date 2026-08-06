@@ -1,0 +1,1 @@
+# ApplAI Specification Folder

@@ -17,11 +17,14 @@ This folder contains the **DATA Schemas for representing everything [CV](../../0
 The goal of this datacollection is to serve a lasting (must not change ofer time) **personal source of work related history data** (experiences, employments, employers, artefacts, evidence, ...) from which human readable, nicely formatted and compressed to the essential resumes and cover letters as well as fully complete, ATS compliant records can be compiled. 
 
 ## Standards
-Whenever possible the data structure shall **align to the "[HR Open Standards / TCP" concepts](../../../GLOSS/H/HR%20Open%20Standards%20Organisation.md)** for ATS interoperability, but with an **additional evidence-and-targeting layer** that will be required to generate ATS-friendly resumes and tailored cover letters without losing provenance or verification detail. 
+Whenever possible the data structure shall comply with Resume JSON de facto Standard for the Job-Seeking side. , but with an **additional evidence-and-targeting layer** that will be required to generate ATS-friendly resumes and tailored cover letters without losing provenance or verification detail. 
 
-**HR Open’s LER-RS/TCP standard** emphasizes machine-readable, verifiable skills, experiences, narratives, and credentials, which fits this use case well.
+
+### The HR Open Standards -> an overkill for Job-Seekers
+**[The HR Open Standards / TCP" concepts](../../../GLOSS/H/HR%20Open%20Standards%20Organisation.md)**, resp. its "HR Open’s LER-RS/TCP standard", however, **is primarely aimed to the employer side** focusing on ATS interoperability. However **for our job-seeking needs [The HR Open Standards / TCP" concepts](../../../GLOSS/H/HR%20Open%20Standards%20Organisation.md) is unnecessarily complex and currently seems to be not that stable and internationally accepted as it should be to fully relay on it**.  
 
 -> https://www.hropenstandards.org/standards-downloads
+
 -> https://viragconsulting.blog/2025/04/02/my-json-resume/
 
 ## Design principles
