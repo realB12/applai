@@ -1,12 +1,13 @@
-# ApplAI: a personal, AI automated Job Application & Management Solution for Job-Seekers
+# ApplAI: a personal, AI automated Job Application & Management Solution for Job-Seekers  
+
 <- [ReadMe](README.md)
 
 ---
 This documents provides 
 
-> **the Full AppAI Project Outline**
+> **the Full AppAI Project Outline for Project Workers**
 
-In this sense, this document is the most up to date **Single Point of entry (SPE) document** for whatever is going on in this ApplAI Project, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary that might not be aligned to this document on purpose (to keep general communication simplified and stable). 
+In this sense, this document is the most up to date **Single Point of entry (SPE) document** for whatever is going on in this ApplAI PROJECT, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary describing the final product and therefore might not be aligned to this document!
 
 ---
 

@@ -7,7 +7,7 @@
 
 <p style="color:red; font-weight:bold; text-align: center; width: 20%;">**!! ON HOLD !!**</p>
 
--> **Details** in the **[ApplAI SPE Doc](_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md)**
+-> find **Current PROJECT Overview** in the **[ApplAI SPE Doc](_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md)** and **Project Status** in the **[Project DIARY](01%20DASHBOARD/PRJ_DIARY.md)**
 
 ## Vision Statement
 Automatically generate a job application from the job-offer's URL and the organisational framework and tasks for its efficient follow up and management.
@@ -33,9 +33,11 @@ Right from the beginning we want to comply with industry standards such
 * comply with [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/) to provide ATS neutrality (where it makes sense, otherwise deviations will be marked). 
 
 ## Current Project Status
-Completed a Perplexity Skill that creates a copy and a summary document from a job offer URL. 
+Completed a **Perplexity Skill that creates a copy and a summary document from a job offer URL**. 
 
 ## Next Steps (ongoing) 
-1. Finalize the [**Specs for** the personal CV related **SourceData**]() to according to [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/).
+1. Finalize the [**Specs for** the personal CV related **SourceData**]()  upon [The HR Open Standards Resume/CV Project Schema](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/).
+
+For detailed project status check -> **[Project DIARY](01%20DASHBOARD/PRJ_DIARY.md)**
 
 
