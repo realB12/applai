@@ -1,17 +1,13 @@
 # CV Data Collection
 ---
 
-* [HR Open Standards Organisation](../../../GLOSS/H/HR%20Open%20Standards%20Organisation.md)
+* **[JSON Resume](../xSTANDARDS/JSON%20Resume/JSON%20Resume.md)**
 
-* [JSON Resume](../../../GLOSS/J/JSON%20Resume.md)
+* **[HR Open Standards Organisation](../../../GLOSS/H/HR%20Open%20Standards%20Organisation.md)**
 
 ---
+
 This folder contains the **DATA Schemas for representing everything [CV](../../01%20ENTITY/C/CV.md) related**. 
-
-
->  **it’s silly to worry about formatting when your resume will be parsed into an Applicant Tracking System (ATS) anyway.**
-
-> **There should be a global resume template, and you should be able to transmit it as JSON directly into the ATS.**
 
 ## Goals
 The goal of this datacollection is to serve a lasting (must not change ofer time) **personal source of work related history data** (experiences, employments, employers, artefacts, evidence, ...) from which human readable, nicely formatted and compressed to the essential resumes and cover letters as well as fully complete, ATS compliant records can be compiled. 
@@ -36,6 +32,13 @@ For ATS compliance, we keep dates, organizations, locations, titles, competencie
 
 HR Open’s recent work also stresses composite resume building, narrative inclusion, and open API compatibility, which supports this separation well.
 
+---
 
 
+## Appendix
 
+### Thoughts
+
+>  **it’s silly to worry about formatting your CV when your resume will be parsed into an Applicant Tracking System (ATS) anyway.**
+
+> **There should be a global resume template, and you should be able to transmit it as JSON directly into the ATS.**
