@@ -1,7 +1,7 @@
 # ApplAI Project Log from Wednesday July 23rd, 2026
 
-## Prompts
-* What are the standard keywords ATS are looking for in resumes
+## Perplexity Prompts
+* Check: What are the standard keywords ATS are looking for in resumes?
 
 * Give me the most extensive data-model for storing skills, experiences and certificates that can be used to compile ATS compliant resumes and cover letters.   
 

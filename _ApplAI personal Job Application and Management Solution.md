@@ -7,7 +7,7 @@ This documents provides
 
 > **the Full AppAI Project Outline for Project Workers**
 
-In this sense, this document is the most up to date **Single Point of entry (SPE) document** for whatever is going on in this ApplAI PROJECT, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary describing the final product and therefore might not be aligned to this document!
+In this sense, this document is the most up to date **Single Point of entry (SPE) document** for **whatever is going on in this ApplAI-PROJECT**, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary describing the final product and therefore might not be aligned to this document!
 
 ---
 
@@ -48,7 +48,7 @@ Provide a local, GitHub-backuped folder with all your resumee relevant data stor
 the here provided data-schema and tools are and will remain open source and community-driven. We release everything we do under the MIT license.
 
 ## Architecture (draft) 
-What we have currently in mind is  
+What we currently have in mind is  
 
 1. a **local GUI-App for Windows** (.NET C# in Visual Studio Code + Exensions)  
 
@@ -78,7 +78,7 @@ Many tools currently are available to translate YAML into JSON and vice versa.
 
 ## Project STATUS
 
-1. Currently the project can **download a job-offer upon the given in URL** and **save it as an (screenshot-)image, PDF and a summary markdown-file in an automatically generated, job-offer specific GitRepo** from where the files and folders are then automatically downloaded to the local machine from where the ApplAI-App was launched. 
+1. Currently the project can **download a job-offer upon the given in URL** and **save it as an (screenshot-)image, PDF and a summary markdown-file in an automatically generated, job-offer specific GitRepo** from where the files and folders are then automatically downloaded to the local machine from where the ApplAI-App was launched. Find [Implementation Details on this ApplAI_SCRAPER called project] -> [_ApplAI JobScraper](40%20DEV/S01_SCRAPER/ApplAI_JobScraper.md)
 
 2. We have investigated the [HR Open Standards Consortium](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provided [TCP-JSON Standard]() and found it useful as a state of the art and future proof reference for our own data standard.   
 However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard more hands-on, practical and with its established ecosystem (e.g the "[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) ways more readymade, applicable and therefore immediately useful. 
