@@ -2,6 +2,7 @@
 
 <- [ReadMe](README.md)
 
+* 
 ---
 This documents provides 
 
@@ -11,7 +12,7 @@ In this sense, this document is the most up to date **Single Point of entry (SPE
 
 ---
 
-## Current Project STATUS = ON HOLD
+## Current Project STATUS = SPECIFICATIONS
 
 ->  **[Current Project STATUS](#project-status) Description** 
 
@@ -19,7 +20,14 @@ In this sense, this document is the most up to date **Single Point of entry (SPE
 
 
 ## Vision Statement
-Automatically **generate a job application resume and an associated cover-letter** from the job-offer's URL plus the organisational framework (e.g. associated Git Repo) and tasks (e.g "sending the resume") for its efficient follow up and learning from it for next applications.
+Automatically **generate a job application resumee and an associated cover-letter** from the job-offer's URL plus the organisational framework (e.g. associated Git Repo) and tasks (e.g "sending the resume") for its efficient follow up and learning from it for next applications.
+
+### Vision realisation
+Technically the overall project is broken down into the following components that will be developed in separate projects. 
+
+1. [ApplAI JobScraper](40%20DEV/S01_SCRAPER/_ApplAI_JobScraper.md): creates *.jpeg, *.pdf, *.md and *.json files upon the the job-offer's URL and stores them in a privately owned GitHub-Repo. Those files will serve first as a collection of relevant job offers and when a job gets your attention as input for the following CV and CoverLetter generation. This part is **realized as a Perplexity Agent Prompt** that is just prompted to do so. 
+
+2. [Applai Generator](40%20DEV/S02_GENERATOR/_Applai%20Generator%20DEV.md) compiles a job-offer specific Resumee.md and CoverLetter.md from a given in  MasterResume.json (that contains ALL skills and expertises) and a JobOffer description file with a focus on matching the generated content to what is required by the job offer. The MasterResumee.json is edited and exported with the [Reactive Resume](../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) application that is again based on the [JSON Resume](90%20EVAL/JSON%20Resume/JSON%20Resume.md) de facto standard for resumee data.
 
 ## The Problem to be solved
 1. **No private storage repository to compile from**: We are still today spending **hours typing our resumes over and over again** into (online-)systems we do not control and where we are never sure where our most private data is going to. And even when we could re-use such data  we forget them over the years or have cancelled the membership or lost the crendentials to login abain. 
