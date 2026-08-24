@@ -2,7 +2,10 @@
 
 <- [ReadMe](README.md)
 
-* 
+* Detailed [**Generator Specs**](../../WORK/ENTITY/AI/PROVIDER/K/Kimi/CONFIG/KIMI%20Project%20Configuration%20Files.md): 
+    * [**VISION**.md](40%20DEV/S02_GENERATOR/VSC/SRC/client/AI/KIMI/CONFIG/VISION.md)
+    * 
+
 ---
 This documents provides 
 
@@ -86,7 +89,18 @@ Many tools currently are available to translate YAML into JSON and vice versa.
 
 ## Project STATUS
 
-1. Currently the project can **download a job-offer upon the given in URL** and **save it as an (screenshot-)image, PDF and a summary markdown-file in an automatically generated, job-offer specific GitRepo** from where the files and folders are then automatically downloaded to the local machine from where the ApplAI-App was launched. Find [Implementation Details on this ApplAI_SCRAPER called project] -> [_ApplAI JobScraper](40%20DEV/S01_SCRAPER/ApplAI_JobScraper.md)
+> **All the project is currently ON HOLD** an will most probably be replaced by a new projct (when at all). 
+
+I have put all the project on hold. And this stop might be permanent in a sense, that when this project is continued - it **will - most probably - be relaunched from scratch and therefore this project will be "continued" under a different name**.
+
+This stop is a cummulation of reasons: Functional and Technological 
+
+1. The functionality I wanted to build into Applai because I felt, that it was missing, has now been directly built into the [Reactive Resume application](https://rxresu.me/) (Thany you Amruth](https://amruthpillai.com/), for that. So the question that come up from this is, whether it is **better to support Amruth with HIS application rather than building my own** upon his foundation.   
+
+2. One of the main reasons why i have started this project at all, was **getting my feet wet with AI in terms of agentic-AI driven vibecoding the app from scratch** - where the first prompted output has honestly suprised in terms of speed, quality and costs. It was usefull from day. one. Minimalistic on purpose, but useful. However, adding new features and getting the few things right, AI has gotten wrong has become anoying with me working on increasingly longer specs  I was no longer sure, whether they still are suporting vibecoding or is has become more vibcoding confusing with every line I was adding to the specs to make the vibe-code finally doing what I wanted to have. This brought me to the conclusion that for larger project, a monolythic approach might not really be the best approach when when new functionality needs to be added after the first realease and certain functionality does not need to be in full but can mature over next cycles. Further I have never been sure, whether next iterations have impacted code that was already good. And always going through the diffs for an application that is not really yours has become a broing headaque. 
+
+### Was was working when I have left
+1. The project can **download a job-offer upon the given in URL** and **save it as an (screenshot-)image, PDF and a summary markdown-file in an automatically generated, job-offer specific GitRepo** from where the files and folders are then automatically downloaded to the local machine from where the ApplAI-App was launched. Find [Implementation Details on this ApplAI_SCRAPER called project] -> [_ApplAI JobScraper](40%20DEV/S01_SCRAPER/ApplAI_JobScraper.md)
 
 2. We have investigated the [HR Open Standards Consortium](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provided [TCP-JSON Standard]() and found it useful as a state of the art and future proof reference for our own data standard.   
 However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard more hands-on, practical and with its established ecosystem (e.g the "[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md) ways more readymade, applicable and therefore immediately useful. 
