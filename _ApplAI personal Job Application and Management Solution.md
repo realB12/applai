@@ -6,6 +6,7 @@
     * [**VISION**.md](40%20DEV/S02_GENERATOR/VSC/SRC/client/AI/KIMI/CONFIG/VISION.md)
     * 
 
+* [**generischer Bewerbungs Prozess**](../../JobSuche/60_OPS/5_Bewerben/BewerbungsProzess.md)
 ---
 This documents provides 
 
@@ -17,9 +18,11 @@ In this sense, this document is the most up to date **Single Point of entry (SPE
 
 ## Current Project STATUS = SPECIFICATIONS
 
+
 ->  **[Current Project STATUS](#project-status) Description** 
 
 -> **[Next Steps](#next-steps)**
+
 
 
 ## Vision Statement
@@ -56,7 +59,7 @@ Provide a local, GitHub-backuped folder with all your resumee relevant data stor
 
 
 ### Open Source
-the here provided data-schema and tools are and will remain open source and community-driven. We release everything we do under the MIT license.
+the herein provided data-schema and tools are and will remain open source and community-driven. We release everything we do under the MIT license.
 
 ## Architecture (draft) 
 What we currently have in mind is  
@@ -89,7 +92,7 @@ Many tools currently are available to translate YAML into JSON and vice versa.
 
 ## Project STATUS
 
-> **All the project is currently ON HOLD** an will most probably be replaced by a new projct (when at all). 
+> **All the project is currently ON HOLD** and will most probably be replaced by a new projct (when at all). 
 
 I have put all the project on hold. And this stop might be permanent in a sense, that when this project is continued - it **will - most probably - be relaunched from scratch and therefore this project will be "continued" under a different name**.
 
@@ -98,6 +101,9 @@ This stop is a cummulation of reasons: Functional and Technological
 1. The functionality I wanted to build into Applai because I felt, that it was missing, has now been directly built into the [Reactive Resume application](https://rxresu.me/) (Thany you Amruth](https://amruthpillai.com/), for that. So the question that come up from this is, whether it is **better to support Amruth with HIS application rather than building my own** upon his foundation.   
 
 2. One of the main reasons why i have started this project at all, was **getting my feet wet with AI in terms of agentic-AI driven vibecoding the app from scratch** - where the first prompted output has honestly suprised in terms of speed, quality and costs. It was usefull from day. one. Minimalistic on purpose, but useful. However, adding new features and getting the few things right, AI has gotten wrong has become anoying with me working on increasingly longer specs  I was no longer sure, whether they still are suporting vibecoding or is has become more vibcoding confusing with every line I was adding to the specs to make the vibe-code finally doing what I wanted to have. This brought me to the conclusion that for larger project, a monolythic approach might not really be the best approach when when new functionality needs to be added after the first realease and certain functionality does not need to be in full but can mature over next cycles. Further I have never been sure, whether next iterations have impacted code that was already good. And always going through the diffs for an application that is not really yours has become a broing headaque. 
+
+This is the reason why I am currently working on an overall concept for how AI generate component based applications that can evolve from a manually prebuilt secure, best practice, not AI vibecoded, stabe core framework that is built and supported by strong community and then built from there with AI assistance. 
+
 
 ### Was was working when I have left
 1. The project can **download a job-offer upon the given in URL** and **save it as an (screenshot-)image, PDF and a summary markdown-file in an automatically generated, job-offer specific GitRepo** from where the files and folders are then automatically downloaded to the local machine from where the ApplAI-App was launched. Find [Implementation Details on this ApplAI_SCRAPER called project] -> [_ApplAI JobScraper](40%20DEV/S01_SCRAPER/ApplAI_JobScraper.md)
