@@ -91,10 +91,19 @@ To keep the final CV-Data in YAML format is more consise, easier to read and to 
 Many tools currently are available to translate YAML into JSON and vice versa. 
 
 ## Project STATUS
+Currently working on the temporary [ApplAI Composer](40%20DEV/S03_COMPOSER/_ApplAI%20Composer.md) Subproject that evaluates the best way to compile a most promising CV and Coverletter from
 
-> **All the project is currently ON HOLD** and will most probably be replaced by a new projct (when at all). 
+1. The JobScraper grabed JobOffer from an URL and
+2. The Reactive Resume managed SuperCV.
 
-I have put all the project on hold. And this stop might be permanent in a sense, that when this project is continued - it **will - most probably - be relaunched from scratch and therefore this project will be "continued" under a different name**.
+The best findings will then be automated/integrated into the fional Applai Generator project.
+
+
+> **All further App development is currently ON HOLD** and will most probably be replaced by a new projct (when at all). 
+
+With the ["SwissKrono Reference JobOffer](../../jobs/JOBS/SwissKrono-Manager_AI_Strategy-2607/OFFER/SwissKrono-Manager_AI_Strategy.md) and a meanwhile most complete [Reactive Resume generated SuperCV], I am currently explorting the agentic compilation of a customized CV and reference Letter for a template organsation.  
+
+I have put all current App-Development activities on hold. And this stop might be permanent in a sense, that when this project is continued - it **will - most probably - be relaunched from scratch and therefore this project will be "continued" under a different name**.
 
 This stop is a cummulation of reasons: Functional and Technological 
 
@@ -113,7 +122,7 @@ However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard
 
 3. We have found the **[Reactive Resume](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md)** Open Source WebApp quite promising  to be used to efficiently create the required [JSON Resume](GLOSS/J/JSON%20Resume.md)-data with a user-friendly, everbody can do GUI (whereas editing JSON directly we consider even for developers too nerdy, errorprown and painstakingly hard when dealing with longer DVs beyond 50 positions).  
 
-4. An alternative Resume-Generator called [resume-ng](https://github.com/bn3t/resume-ng(example on https://github.com/bn3t/resume-ng) I have considered as a valid and pragmatic alternative that generates really nice output. However I do not trust its stability over time, as it seems to be just for personal use for its  developer (no other contributors on the project). 
+4. An alternative Resume-Generator called [resume-ng](https://github.com/bn3t/resume-ng(example on https://github.com/bn3t/resume-ng) I have considered as a valid and pragmatic alternative that generates really nice output. However **I do not trust its stability** over time, as it seems to be just for personal use for its  developer (no other contributors on the project). 
 
 5. Found YAML format a better than JSON
 ![Y A M Lvs J S O N](./zPIC/YAMLvsJSON.png): its easier to edit manually, more readable and less error-prone than JSON. Many tools are available to translate YAML into JSON and vice versa. 
