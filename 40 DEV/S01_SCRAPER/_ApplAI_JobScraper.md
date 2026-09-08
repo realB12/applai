@@ -1,17 +1,23 @@
-# Applai Scraper Prompt :: an Applai Subproject
+# Applai Scraper Prompt 
+
+**Links**: 
 
 * [**Overall Applai Solution**](../../_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md)
 
 * [Applai-**scraped JobOffers**](../../../../jobs/_Applai-scraped%20JobOffers.md): the folder that contains all JobOffer-files in *.pdf, *.jpeg and *.md format that will serve as input for the subsequent generation of customized job-application CVs and CustomerLetters. 
 
+---
 
-## Summary
+> Mit dem Scraper Skill **wird eine StellenAnzeige durch die Angabe ihrer URL im .md, .pdf und .jpeg Format ins lokale und remote /JOBS/Company-Role-YYMM/OFFER GitHub Repository kopiert**. 
+
+
+## How to do it 
 1. Open a new Perplexity-Prompt
-1. Add a screenshot from the JobOffer
-2. type "Scrape_JobOffer"
+1. **Add a screenshot** from the JobOffer
+2. type "**Scrape JobOffer**"
 4. Follow the instructions
 5. When done, sync your local ["jobs" name JobOffers Repo](../../../../jobs/JOBS/_JobOffers.md)
-6. When done you should have the job-offer in *.md, *.pdf and *.jpeg format in your [C:\me\REPO\jobs\JOBS](../../../../jobs/JOBS/_JobOffers.md)-folder
+6. When done you should have the job-offer in *.md, *.pdf and *.jpeg format in your [C:\me\REPO\jobs\JOBS\Company-Role-YYMM\OFFER](../../../../jobs/JOBS/_JobOffers.md)-folder
 
 ## Scope
 The [**Overall Applai Solution**](../../_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md) technically splits into two parts: 
