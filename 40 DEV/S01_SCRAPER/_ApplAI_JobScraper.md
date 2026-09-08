@@ -22,14 +22,39 @@
 ## Scope
 The [**Overall Applai Solution**](../../_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md) technically splits into two parts: 
 
-1. **Scraping**: Generating PDF, MD and JSON files from the job offer's URL 
+1. **Scraping**: Generating PDF, MD and JSON files from the job offer's URL into local and remot /JOB Repo. 
 
-2. **Building**: (Co-piloted) Selection of relevant job-itmes from a [MasterCV]() and compiling the draft job application artefacts in various formats to be then manually edited towards perfection.  
+2. **Composing**: Compiling AI customized Resume and Cover Letter in readymade *.pdf formats. 
 
-## Functionality
-The first part of [the Applai Solution](../../_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md) is **scraping the JobOffer's URL into *.pdf, *.md and *.JSON and *.jpeg formatted files** and loading them first into a joboffer specific **["jobs" named GitHub Repo](https://github.com/realB12/jobs)** and the local Drive ("*C:\me\REPO\jobs\JOBS*" in my case). 
+## How it works
+Although it would have been possible to fully automate the process from giving in the job-Offer URL till sending the such generated application files (Short-CV, Application Letter (for the Recruiter and the SuperCV for ATS) am still keeping the following steps in separate Skills that are launched individually. 
 
-Those files will serve first as a collection of relevant job offers and then, when a job gets your attention, secondly as input for CV and CoverLetter generation. 
+### 1. Scanning
+If JobOffers just need to be remembered without being sure yet, whether you are going to apply, collect them in a [**Trello-List** ](https://trello.com/b/STBTePxM/jobs)
+
+### 2. Scraping
+Open a new Perplexity/Computer-Session, insert a Screenshot from the Joboffer, type "scrape job" and follow the instructions.   
+
+This archives the JobOffer in .pdf, .md, .JSON and .jpeg format  files in your your remot **["jobs" named GitHub Repo](https://github.com/realB12/jobs)**. 
+
+In a second step you may GitHub-sync it with your local repo on *C:\me\REPO\jobs\JOBS*. 
+
+The goal of this step is to have the original job-offer archived so that you always will have a reference whatfor you have applied - even when, or in case when the online job-offer is gone. 
+
+These archived files will remind you for appliance and then will erver as input files for the next composing step.
+
+-> [**JobScraper** Implementation Details](_ApplAI_JobScraper.md) 
+
+### 3. Composing
+AI generate a draft, customized Kurz-CV and Cover Letter from the given in JobOffer-file and the [_Reactive Resume](../../../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) generated [SuperCV](../S02_GENERATOR/VSC/data/SuperCV/_SuperCVs.md)
+
+The such generated files are in *.md format for manual editing
+
+### 4. Polish
+Generate the final, *.pdf-files from the now final content *.md files together with a standardized Log-File that tracks the interaction with the company
+
+### 5. Dispatching
+Uploading the generated files (Kurz-CV, Cover Letter und SuperCV) to the job application site or via e-Mail. Add the Sending date to the Log and update its Status to "SENT". 
 
 ## Implementation
 This part is realized as a **"job-offer-extraction-to-github" named Perplexity Skill** that will just be prompted to do so. 
