@@ -1,23 +1,26 @@
-# Applai Scraper Prompt 
+# Applai Scraper Skill 
 
 **Links**: 
 
-* [**Overall Applai Solution**](../../_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md)
+* [**Overall, End2End Applai Solution**](../../_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md)
 
-* [Applai-**scraped JobOffers**](../../../../jobs/_Applai-scraped%20JobOffers.md): the folder that contains all JobOffer-files in *.pdf, *.jpeg and *.md format that will serve as input for the subsequent generation of customized job-application CVs and CustomerLetters. 
+* [**JobOffer Folder**](../../../../jobs/_Applai-scraped%20JobOffers.md): the folder that contains all JobOffer-files in *.pdf, *.jpeg and *.md format that will serve as input for the subsequent generation of customized job-application CVs and CustomerLetters. 
+
+* [Composer](../S03_COMPOSER/_ApplAI%20Composer.md): generating Short-CV and CoverLetter from JobOffer and SuperCV.  
 
 ---
 
-> Mit dem Scraper Skill **wird eine StellenAnzeige durch die Angabe ihrer URL im .md, .pdf und .jpeg Format ins lokale und remote /JOBS/Company-Role-YYMM/OFFER GitHub Repository kopiert**. 
+> Mit dem Perplexit Scraper Skill **wird eine StellenAnzeige durch die Angabe ihrer URL im .md, .pdf und .jpeg Format ins lokale und remote /JOBS/Company-Role-YYMM/OFFER GitHub Repository kopiert**. 
 
 
 ## How to do it 
-1. Open a new Perplexity-Prompt
-1. **Add a screenshot** from the JobOffer
-2. type "**Scrape JobOffer**"
-4. Follow the instructions
-5. When done, sync your local ["jobs" name JobOffers Repo](../../../../jobs/JOBS/_JobOffers.md)
-6. When done you should have the job-offer in *.md, *.pdf and *.jpeg format in your [C:\me\REPO\jobs\JOBS\Company-Role-YYMM\OFFER](../../../../jobs/JOBS/_JobOffers.md)-folder
+1. Open a new **Perplexity-Prompt**
+2. **Copy a screenshot** from the JobOffer to the Prompt
+3. type "**Scrape JobOffer**"
+4. **Follow the instructions**
+5. Finally **sync** your local ["jobs" name JobOffers Repo](../../../../jobs/JOBS/_JobOffers.md) to have the job-offer in *.md, *.pdf and *.jpeg format in your [C:\me\REPO\jobs\JOBS\Company-Role-YYMM\OFFER](../../../../jobs/JOBS/_JobOffers.md)-folder
+
+-> These instructions are part of the Overll [JobSuche-Guide](../../../../JobSuche/_JobSuche.md)
 
 ## Scope
 The [**Overall Applai Solution**](../../_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md) technically splits into two parts: 
@@ -44,7 +47,7 @@ The goal of this step is to have the original job-offer archived so that you alw
 These archived files will remind you for appliance and then will erver as input files for the next composing step.
 
 -> [**JobScraper** Implementation Details](_ApplAI_JobScraper.md) 
-
+  
 ### 3. Composing
 AI generate a draft, customized Kurz-CV and Cover Letter from the given in JobOffer-file and the [_Reactive Resume](../../../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) generated [SuperCV](../S02_GENERATOR/VSC/data/SuperCV/_SuperCVs.md)
 

@@ -1,11 +1,28 @@
-# ApplAI Composer Porject
+# Composer Skill
 
-ApplAI's Composer is a temporary project that evaluates the best way to compile a most promising CV and Coverletter from 
+-> [JobSuche](../../../../JobSuche/_JobSuche.md)
 
-1. The [JobScraper](../S01_SCRAPER/_ApplAI_JobScraper.md) grabed **JobOffer** from an URL and
-2. The [Reactive Resume](../../../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) managed **SuperCV**.
+---
 
-The best findings will then be automated/integrated into the fional [Applai Generator ](../S02_GENERATOR/_Applai%20Generator%20DEV.md) project. 
+ApplAI's Composer provides a Perplexity skill to **compile a most promising CV and Coverletter** from 
+
+1. The previously [JobScraper](../S01_SCRAPER/_ApplAI_JobScraper.md) archived **JobOffer** from a JobOffer-URL and  
+
+2. The [Reactive Resume](../../../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) managed **[SuperCV](../S02_GENERATOR/VSC/data/SuperCV/_SuperCVs.md)**.
+
+After syncing your remote GitHub with your local Repo, you will find the generated files in *.md format for manual editing in your *\JOBS\Company-Role-YYMM\APPLICATION*-folder. 
+
+## How it works
+
+> 1. Open a new **Perplexity-Prompt**
+> 2. type "**Scrape JobOffer**"
+> 3. **Follow the instructions**
+> 5. Finally **Git-sync** your local ["jobs" name JobOffers Repo](../../../../jobs/JOBS/_JobOffers.md) to find the generated files in *.md format for manual editing in your *\JOBS\Company-Role-YYMM\APPLICATION*-folder. 
+
+
+## Implementation
+
+
 
 
 

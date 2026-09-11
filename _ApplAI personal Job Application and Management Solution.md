@@ -1,22 +1,19 @@
-# ApplAI: a personal, AI automated Job Application & Management Solution for Job-Seekers  
+# ApplAI: a personal, AI-automated Job-Application & Management Solution for Job-Seekers  
 
 <- [ReadMe](README.md)
 
-* Detailed [**Generator Specs**](../../WORK/ENTITY/AI/PROVIDER/K/Kimi/CONFIG/KIMI%20Project%20Configuration%20Files.md): 
-    * [**VISION**.md](40%20DEV/S02_GENERATOR/VSC/SRC/client/AI/KIMI/CONFIG/VISION.md)
-    * 
-
 * [**generischer Bewerbungs Prozess**](../../JobSuche/60_OPS/5_Bewerben/BewerbungsProzess.md)
+
 ---
 This documents provides 
 
-> **the Full AppAI Project Outline for Project Workers**
+> **the Full AppAI Project Outline for Project Workers & Stakeholders**
 
-In this sense, this document is the most up to date **Single Point of entry (SPE) document** for **whatever is going on in this ApplAI-PROJECT**, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary describing the final product and therefore might not be aligned to this document!
+This document represents the **Single Point of entry (SPE) document** for **whatever is going on in this ApplAI-PROJECT**, whereas the [ReadMe](README.md) is just the publicly exposed (GitHub) summary describing the final product and therefore might not be 100% aligned with this document!
 
 ---
 
-## Current Project STATUS = SPECIFICATIONS
+## Current Project STATUS = IMPLEMENTATION 60%
 
 
 ->  **[Current Project STATUS](#project-status) Description** 
@@ -28,14 +25,40 @@ In this sense, this document is the most up to date **Single Point of entry (SPE
 ## Vision Statement
 Automatically **generate a job application resumee and an associated cover-letter** from the job-offer's URL plus the organisational framework (e.g. associated Git Repo) and tasks (e.g "sending the resume") for its efficient follow up and learning from it for next applications.
 
-### Vision realisation
-Technically the overall project is broken down into the following components that will be developed in separate projects. 
+Currently for personal/individual use. With [AutoApply](10%20PRODUCT/AutoApply/_AutoApply.md) offered as a full ServiceInterface in the future.  
 
-1. [ApplAI JobScraper](40%20DEV/S01_SCRAPER/_ApplAI_JobScraper.md): creates *.jpeg, *.pdf, *.md and *.json files upon the the job-offer's URL and stores them in a privately owned GitHub-Repo. Those files will serve first as a collection of relevant job offers and when a job gets your attention as input for the following CV and CoverLetter generation. This part is **realized as a Perplexity Agent Prompt** that is just prompted to do so. 
+## Implementation approach
+Although it would have been possible to fully automate the process from giving in the job-Offer URL till sending the such generated application files (Short-CV, Application Letter (for the Recruiter) and the SuperCV for ATS), we keep the following steps as separate Perplexity skills to be manually launched in sequence. This allows partial generation (for cost savings when not going the full circle yet) and manual customization of the final output in between the process. 
 
-2. [Applai Generator](40%20DEV/S02_GENERATOR/_Applai%20Generator%20DEV.md) compiles a job-offer specific Resumee.md and CoverLetter.md from a given in  MasterResume.json (that contains ALL skills and expertises) and a JobOffer description file with a focus on matching the generated content to what is required by the job offer. The MasterResumee.json is edited and exported with the [Reactive Resume](../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) application that is again based on the [JSON Resume](90%20EVAL/JSON%20Resume/JSON%20Resume.md) de facto standard for resumee data.
+### 1. Scanning
+If JobOffers just need to be remembered without being sure yet, whether you are going to apply, collect them in a [**Trello-List** ](https://trello.com/b/STBTePxM/jobs)
+
+### 2. Scraping
+Open a new Perplexity/Computer-Session, insert a Screenshot from the Joboffer, type "scrape job" and follow the instructions.   
+
+This archives the JobOffer in .pdf, .md, .JSON and .jpeg format  files in your your remot **["jobs" named GitHub Repo](https://github.com/realB12/jobs)**. 
+
+In a second step you may GitHub-sync it with your local repo on *C:\me\REPO\jobs\JOBS*. 
+
+The goal of this step is to have the original job-offer archived so that you always will have a reference whatfor you have applied - even when, or in case when the online job-offer is gone. 
+
+These archived files will remind you for appliance and then will erver as input files for the next composing step.
+
+-> [**JobScraper** Implementation Details](_ApplAI_JobScraper.md) 
+  
+### 3. Composing
+AI generate a draft, customized Kurz-CV and Cover Letter from the given in JobOffer-file and the [_Reactive Resume](../../../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) generated [SuperCV](../S02_GENERATOR/VSC/data/SuperCV/_SuperCVs.md)
+
+The such generated files are in *.md format for manual editing
+
+### 4. Polish
+Generate the final, *.pdf-files from the now final content *.md files together with a standardized Log-File that tracks the interaction with the company
+
+### 5. Dispatching
+Uploading the generated files (Kurz-CV, Cover Letter und SuperCV) to the job application site or via e-Mail. Add the Sending date to the Log and update its Status to "SENT". 
 
 ## The Problem to be solved
+
 1. **No private storage repository to compile from**: We are still today spending **hours typing our resumes over and over again** into (online-)systems we do not control and where we are never sure where our most private data is going to. And even when we could re-use such data  we forget them over the years or have cancelled the membership or lost the crendentials to login abain. 
 
 2. Although LinkedIn or "[HR Open Standards Organisation](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provide extensive standards for how such resume related data should be stored, they are built for the employer side and therefore are too complex for ordinary job seers requirements and currently do not provide frameworks nor tools to to efficiently work with those standards. 
@@ -91,18 +114,29 @@ To keep the final CV-Data in YAML format is more consise, easier to read and to 
 Many tools currently are available to translate YAML into JSON and vice versa. 
 
 ## Project STATUS
-Currently working on the temporary [ApplAI Composer](40%20DEV/S03_COMPOSER/_ApplAI%20Composer.md) Subproject that evaluates the best way to compile a most promising CV and Coverletter from
+A first Short-CV, Cover-Letter and SuperCV have been sent to a real job-offerer waiting for feedback with the current tools at hand. 
 
-1. The JobScraper grabed JobOffer from an URL and
-2. The Reactive Resume managed SuperCV.
+Currently integration the [ApplAI JobScraper](40%20DEV/S01_SCRAPER/_ApplAI_JobScraper.md) and [ApplAI Composer](40%20DEV/S03_COMPOSER/_ApplAI%20Composer.md) into an all embracing **"APPLICATOR" named Sub-Project** for end2end automation.  
 
-The best findings will then be automated/integrated into the fional Applai Generator project.
+### New business idea: Job-Application Self-Service for Companies
+We are currently thinking about a public WebService where experts who are open for work may upload their SuperCV once, so that RECRUITERS and COMPANIES then can give in their JobOffer-URLs to compile the potential candiate's AI-customized job-application documents permissenles by themselves whenever they want. 
+
+Life **example**: On LinkedIn I am sharing a link to my personal Homepage, where a recruiter, who has stumbles over my name, can without my permission nor attention just drops his job-offer's URL and his eMail and within seconds will get my CUSTOMIZED Short-CV and CoverLetter demonstrating best fit or not directly into his inbox. 
+
+So it is no longer the job-seeker looking for companies to apply, but companies self-generating customized job-appliances for persons they just got aware for being potential candidates: upon public contributions in terms of workshops given, podcasts, shared code, excellent social media contributions, articles, projects or ad hoc wherever interesting people are met. 
+
+The key idea behind this is, that for the best match, the probability that a company finds promising candidates upon their currently active real world contributions and impact with much higher precision for a real match, than by waiting for a dream candiate guessing in the wild where to apply and who might never get your (young) company onto his or her radar. 
+
+As a side effect the company might test serveral open positions against the same candiate or might just test their job-offer-content whether it will trigger the "right" response with specific "target" candiates in mind offering this service on their homepage. 
+
+Implementation details include 
+1. the possibility to **offer different agents for different roles** (so on my homepage I have an agent for "engineer" and another for "CTO". 
+2. Letting me know about the process or not  
+3. Fix Payments for every CV generated
+etc. 
 
 
-> **All further App development is currently ON HOLD** and will most probably be replaced by a new projct (when at all). 
-
-With the ["SwissKrono Reference JobOffer](../../jobs/JOBS/SwissKrono-Manager_AI_Strategy-2607/OFFER/SwissKrono-Manager_AI_Strategy.md) and a meanwhile most complete [Reactive Resume generated SuperCV], I am currently explorting the agentic compilation of a customized CV and reference Letter for a template organsation.  
-
+### GENERATOR stopped
 I have put all current App-Development activities on hold. And this stop might be permanent in a sense, that when this project is continued - it **will - most probably - be relaunched from scratch and therefore this project will be "continued" under a different name**.
 
 This stop is a cummulation of reasons: Functional and Technological 
