@@ -30,53 +30,70 @@ Currently for personal/individual use. With [AutoApply](10%20PRODUCT/AutoApply/_
 ## Implementation approach
 Although it would have been possible to fully automate the process from giving in the job-Offer URL till sending the such generated application files (Short-CV, Application Letter (for the Recruiter) and the SuperCV for ATS), we keep the following steps as separate Perplexity skills to be manually launched in sequence. This allows partial generation (for cost savings when not going the full circle yet) and manual customization of the final output in between the process. 
 
+Those **process steps** are 
+
+1. [**Scanning**](#1-scanning)
+2. [**Scraping**](#2-scraping)
+3. [**Composing**](#3-composing)
+4. [**Polishing**](#4-polishing)
+5. [**Dispatching**](#5-dispatching)
+
 ### 1. Scanning
-If JobOffers just need to be remembered without being sure yet, whether you are going to apply, collect them in a [**Trello-List** ](https://trello.com/b/STBTePxM/jobs)
+If JobOffers just need to be remembered without being sure yet, whether you are going to apply, collect them in a [**Trello-List** ](https://trello.com/b/STBTePxM/jobs) - which technically is OUTSIDE the Apply-Solution-Context. 
 
 ### 2. Scraping
-Open a new Perplexity/Computer-Session, insert a Screenshot from the Joboffer, type "scrape job" and follow the instructions.   
+Open a new Perplexity/Computer-Session, insert a Screenshot from the Joboffer, type "**scrape job**" and follow the instructions.   
 
-This archives the JobOffer in .pdf, .md, .JSON and .jpeg format  files in your your remot **["jobs" named GitHub Repo](https://github.com/realB12/jobs)**. 
+This archives the JobOffer in .pdf, .md, .JSON and .jpeg format  files in your your remote **["jobs" named GitHub Repo](https://github.com/realB12/jobs)**. 
 
 In a second step you may GitHub-sync it with your local repo on *C:\me\REPO\jobs\JOBS*. 
 
-The goal of this step is to have the original job-offer archived so that you always will have a reference whatfor you have applied - even when, or in case when the online job-offer is gone. 
+The goal of this step is to have the original job-offer permanently archived and under your control for future reference for what you have applied. 
 
-These archived files will remind you for appliance and then will erver as input files for the next composing step.
+These archived files will remind you for pending applications using these files as input for the next composing step.
 
 -> [**JobScraper** Implementation Details](_ApplAI_JobScraper.md) 
   
 ### 3. Composing
-AI generate a draft, customized Kurz-CV and Cover Letter from the given in JobOffer-file and the [_Reactive Resume](../../../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) generated [SuperCV](../S02_GENERATOR/VSC/data/SuperCV/_SuperCVs.md)
+AI generate a draft, customized "Short-CV" and "Cover Letter" from the given in JobOffer-file and the [_Reactive Resume](../../../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) generated [SuperCV](../S02_GENERATOR/VSC/data/SuperCV/_SuperCVs.md)
 
-The such generated files are in *.md format for manual editing
+The such generated files are in *.md format for manual editing towards content-wise completion. 
 
-### 4. Polish
-Generate the final, *.pdf-files from the now final content *.md files together with a standardized Log-File that tracks the interaction with the company
+> 1. Open a new **Perplexity-Prompt**
+> 2. type "**Scrape JobOffer**"
+> 3. **Follow the instructions**
+> 5. Finally **Git-sync** your local ["jobs" name JobOffers Repo](../../../../jobs/JOBS/_JobOffers.md) to find the generated files in *.md format for manual editing in your *\JOBS\Company-Role-YYMM\APPLICATION*-folder. 
+
+-> [**Composer Implementation Details** ](40%20DEV/S03_COMPOSER/_ApplAI%20Composer.md)
+
+### 4. Polishing
+Generate the final, *.pdf-files from the now (manually) finalized content files together with a standardized Log-File that tracks the interaction with the company
 
 ### 5. Dispatching
-Uploading the generated files (Kurz-CV, Cover Letter und SuperCV) to the job application site or via e-Mail. Add the Sending date to the Log and update its Status to "SENT". 
+(Manually) uploading the generated files (Kurz-CV, Cover Letter und SuperCV) to the job application site or via e-Mail. Add the Sending date to the Log and update its Status to "SENT". 
+
+---
 
 ## The Problem to be solved
 
-1. **No private storage repository to compile from**: We are still today spending **hours typing our resumes over and over again** into (online-)systems we do not control and where we are never sure where our most private data is going to. And even when we could re-use such data  we forget them over the years or have cancelled the membership or lost the crendentials to login abain. 
+1. **No private storage repository to compile from**: We are still today spending **hours typing our resumes over and over again** into (online-)systems we do not control, and where we are never sure, where our most private data is going to. And even when we could re-use such data, we often forget them over the years in employment or have cancelled the membership or lost the crendentials to login again to the platforms where we have created our last job application files. 
 
-2. Although LinkedIn or "[HR Open Standards Organisation](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provide extensive standards for how such resume related data should be stored, they are built for the employer side and therefore are too complex for ordinary job seers requirements and currently do not provide frameworks nor tools to to efficiently work with those standards. 
+2. Although LinkedIn or "[HR Open Standards Organisation](GLOSS/H/HR%20Open%20Standards%20Organisation.md) provide extensive standards for how such resume-related data should be stored, they are built for the employer side and therefore are too complex for ordinary job seeker requirements and currently do not provide frameworks nor tools to to efficiently work with those standards. 
 
 ## Project Goals
-Provide a local, GitHub-backuped folder with all your resumee relevant data stored in well structured, atomic Markdown files you will never loose and from where you can generate nice human readable resumes and cover letters, as well as data-complete, ATS-standards-compliant artefacts to 
+Provide a local, GitHub-backuped folder with all your resumee relevant data stored in well structured, atomic Markdown files you will never loose and from where you can generate nice human readable resumes and cover letters, as well as data-complete, ATS-standards-compliant Short-CVs and Cover Letters to 
 
 * **Auto-apply for different job roles** by just providing the job-offer's URL
 
-* **generate ATS-optimized AND HR readable appliance documents** in parallel.
+* **generate ATS-optimized AND Recruiter-readable appliance documents** in parallel.
 
-* provide **adapters for (AI-) 3rd party tools** to cover language, cultural, industry and role specific HR and job interview requirements.  
+* provide **adapters for 3rd party (AI-) tools** to cover language, cultural, industry and role specific HR and job interview requirements.  
 
-* **keep your CV-data private** and share it only with those how need in a way that data-leaks on receiver-side could be tracked back to the receiver (trust is ok, checking is better).  
+* **keep your MasterCV-data private** and share it only with those who needs them in a way, that data-leaks on receiver-side could be tracked back to the receiver (trust is ok, checking is better).  
 
-* **prevent data-loss** upon integrated GitHub-versioning and Backup File-Synchronization 
+* **prevent data-loss** upon integrated GitHub-versioning and Backup File-Synchronization of such created documents.
 
-* Send reminders to motivate ongoing work review, updates and adding new experiences on a monthly bases. 
+* Send reminders to motivate ongoing work reviews, updates and adding new experiences on a monthly bases. 
 
 * **Stability**: The here implied data-**standards must not be changed over time**
 
