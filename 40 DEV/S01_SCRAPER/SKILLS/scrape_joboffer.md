@@ -1,58 +1,77 @@
 # scrape-joboffer (personal Perplexity Skill)
 
-created September 4th for Perplexity Computer PRO Version
-## How to run
+## Meta
+This skill was created September 12th for Perplexity Computer PRO Version by rene.baron@baronsolutions.ch
 
-Just enter "Scrape_JobOffer"
-
-## What it does
-Whenever you trigger "Scrape_JobOffer" or ask to archive a job posting, it immediately asks you for the URL, company name, job role, and a pasted screenshot — rather than assuming any of them from context — then runs the same fetch → PDF/Markdown/screenshot build → GitHub commit workflow into realB12/jobs that we just used, including the 404-with-trailing-suffix fallback to cover pages that can only be reached when logged in. 
-
-You can manage this Skill anytime at perplexity.ai/computer/skills: 
-
+This Skill can be modified anytime at perplexity.ai/computer/skills as follows:  
 ![Where Skills Are Found In Perplexity](./zPIC/WhereSkillsAreFoundInPerplexity.png)
 
-## (Generated) Info
-Archive an online job offer/vacancy/listing as PDF, Markdown, and a screenshot image, then commit them to the user's jobs GitHub repo. Always opens by asking the user for the job-offer URL, the company name, the job role, and to paste a screenshot of the posting. **Trigger on 'Scrape_JobOffer', 'scrape this job offer', or requests to save/archive/convert a job posting**.
+## How to run the skill
+1. Open Perplexity **Computer**
+2. **paste a screenshot** of the job-offer into the prompt.
+3. Then type "scrape joboffer"
+
+## What it does
+It immediately asks you (rather than assuming from context) for 
+
+1. the **joboffer's URL** (you copy/paste from your browser), 
+
+2. the **company name** that shall be used for the scraped files' name but not for content, 
+
+3. the **job role** for naming the scraped files
+
+4. When no Screenshot is recognized you will be asked to insert it. 
+
+The scraping will only continue when all 4 input-pieces are complete.
+
+It then scraped the content of the such recognized joboffer at the given in URL and saves it in *.md and *.pdf-format together with the provided Screenshot into a new created folder in the realB12/jobs GitHub Repo as follows: 
+then runs the same fetch → PDF/Markdown/screenshot build → GitHub commit workflow into realB12/jobs that we just used, 
+
+The process includes a 404-with-trailing-suffix fallback solution to cover pages that can only be reached when logged in. 
+
+---
 
 # The Skill
 
 ## Scrape JobOffer
 ### When to Use This Skill
-Use this skill when the user invokes it by name ("Scrape_JobOffer", "run Scrape JobOffer") or asks to save, archive, convert, or turn a job posting/listing/vacancy into files, and has not already supplied all four inputs below in the same message.
+Use this skill only when the user types "scrape joboffer" after having posted an screenshot/image of it. 
 
 ### Instructions
 Always ask first. Regardless of what the user's message already contains, open with a single ask_user_question call (4 questions, one per input, free_text_only: true except the screenshot question) requesting:
 
-1. The **job-offer URL**.
+1. The **job-offer URL**: referred to as <URL> when creating filenames
 
-2. The **company name** (this becomes JobName).
+2. The **company name**: referred to as <COMPANY> when creating file-names
 
-3. The **job role** as stated in the posting (this becomes JobRole).
+3. The **job role**: referred to as <ROLE> when creating file-names
 
-4. A pasted **screenshot** of the job-offer page (allow_attachments: true). Tell the user the screenshot must be pasted/attached by them — never captured automatically.
+4. When not already given in just before the "scrape joboffer" command was inserted: A pasted **screenshot** of the job-offer page (allow_attachments: true). Tell the user the screenshot must be pasted/attached by them — never captured automatically.
+
+Determine <YYMM>. Use the posting date if available (YY = two-digit year, MM = two-digit month of when the job was posted); otherwise use today's date. Compute this programmatically, never hardcode.
 
 If the user already answered some of these in their triggering message, you may pre-fill those specific questions as already answered and only ask for what's missing — but always still ask for the screenshot unless an image is already attached to the current message.
 
-Sanitize and compose filenames. Sanitize JobName and JobRole (keep letters/numbers, replace spaces and other characters with _). Compose <FileName> as <JobName>-<JobRole> (hyphen-joined, each part underscore-sanitized).
+Sanitize and compose filenames. Sanitize <COMPANY> and <ROLE> (keep letters/numbers, replace spaces and other characters with _). Compose <FileName> as <COMPANY>-<ROLE>-<YYMM> (hyphen-joined, each part underscore-sanitized), where YYMM = Current Year and Month like for instance "2608" for August 2026. 
 
 Fetch the job offer. Fetch the URL for the full posting content. If it 404s or looks wrong, try the same URL with any trailing path segment (e.g. /with) stripped before giving up — job board links sometimes carry an extra suffix that breaks resolution. If the page is JavaScript-heavy or blocks direct fetching, fall back to a browser-based fetch of the visible job-offer text.
 
-Extract and structure the content. Pull out: job title, company/organization, location (remote/hybrid/on-site), employment type, salary/compensation, posting date/deadline, role summary, responsibilities, requirements, benefits, contact/how-to-apply, and the source URL. Preserve the full original posting text — do not drop details. Check the user's pasted screenshot for any fields visible there but missing from the fetched text (e.g. salary estimates, contact details) and include them too.
+Extract and structure the content. Pull out: job title, company/organization, location (remote/hybrid/on-site), employment type, salary/compensation, posting date/deadline, role summary, responsibilities, requirements, benefits, contact/how-to-apply, and the source URL. 
+Preserve the full original posting text — do not drop details. Check the user's pasted screenshot for any fields visible there but missing from the fetched text (e.g. salary estimates, contact details) and include them too.
 
-Build the PDF. Load office/pdf and follow it: header with job title + company, a structured summary table from step 4 (omit fields not present), the full posting text with original headings/lists, and a footer with source URL + generation date. Save as <FileName>.pdf.
+Build the PDF. Load office/pdf and follow it: header with job title + company as extraced from the JobOffer, a structured summary table from step 4 (omit fields not present), the full posting text with original headings/lists, and a footer with source URL + generation date. Save as <FileName>.pdf.
 
 Export Markdown. Write the same structured fields plus full posting text to <FileName>.md, with the source URL.
 
 Save the screenshot. Save the user-pasted image as <FileName>.png (convert to real PNG if it arrived as JPEG).
 
-Determine YYMM. Use the posting date if available (YY = two-digit year, MM = two-digit month of when the job was posted); otherwise use today's date. Compute this programmatically, never hardcode.
-
 Commit to GitHub. Target repo defaults to realB12/jobs (confirm if the user names a different one). Using bash with api_credentials=["github"]:
 
 Clone/reuse the repo.
 
-Create JOBS/<FileName>-YYMM/ with a _<FileName>-YYMM.md containing # <JobName>: <JobRole> (YYMM).
+Create JOBS/<FileName> 
+
+Copy with a _<FileName>.md containing # <JobName>: <JobRole> (YYMM).
 
 Create JOBS/<FileName>-YYMM/OFFER/ containing <FileName>.pdf, <FileName>.md, <FileName>.png, and a _JobOffer.md containing # <JobName>: JobOffer for <JobRole>.
 
