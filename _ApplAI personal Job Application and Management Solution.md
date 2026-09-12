@@ -112,7 +112,7 @@ What we currently have in mind is
 
 4. a **BackendServer** to dispatch job-requests from all local ApplAI-Apps. 
 
-5. Github Repos for project documentation, sourcecode management, templates, user manuals and tutorials, and backend I/O caching till need for speed and scale will require more dedicates solutions.  
+5. **Github Repos** for project documentation, sourcecode management, templates, user manuals and tutorials, and backend I/O caching till need for speed and scale will require more dedicates solutions.  
 
 ## Design Principles
 to keep data-structure close to [HR Open's new TCP-standard]() reduced to what we reall need (and therefore not dealing with its full complexity), we will keep the job-data components such as job-experiences, skills etc. in separate files and will therefore work on a more atomic level from where resumes will be dynamically compiled from scratch rather than having ALL data in a single file.
@@ -121,7 +121,7 @@ to keep data-structure close to [HR Open's new TCP-standard]() reduced to what w
 We keep the current architectural scope limted to a local App, english, Windows, Markdown, PDF, "HR Open Standards Resume/CV"-Standard etc. on purpose. However, we are confident than when the first prototype finds acceptance to rollout for different OS, devices, platforms, languages, AI providers, etc. 
 
 ### Architectural Stability and Change Requests
-However, the goal is NOT to provide a monolythic, customizable everything fits to everyone architecture, but to deliver initially ONE and in the futrue several customized ready made boxed and therefore - concerning architecture - non further customizable-solutions. In this sense, input on architectural design and change is always welcome, but we reserve the right to decide alone, what currently works best for us,  as we do not like to switch/change our own platform upon change requests. 
+However, the goal is NOT to provide a monolythic, customizable everything fits to everyone architecture, but to deliver initially ONE and in the futrue several customized ready made boxed and therefore - concerning architectures - non further customizable-solutions. In this sense, input on architectural design and change is always welcome, but we reserve the right to decide alone, what currently works best for us, as we do not like to switch/change our own, "good-enough for us",  platform upon change requests. 
 
 Scaling of the backend will be done in the background and will remain on our shoulders - technically and financially. 
 
@@ -131,9 +131,11 @@ To keep the final CV-Data in YAML format is more consise, easier to read and to 
 Many tools currently are available to translate YAML into JSON and vice versa. 
 
 ## Project STATUS
-A first Short-CV, Cover-Letter and SuperCV have been sent to a real job-offerer waiting for feedback with the current tools at hand. 
+First Short-CVs, Cover-Letters and SuperCVs have been sent to real companies. So currently we are waiting for real-world feedback with the current tools at hand. 
 
-Currently integration the [ApplAI JobScraper](40%20DEV/S01_SCRAPER/_ApplAI_JobScraper.md) and [ApplAI Composer](40%20DEV/S03_COMPOSER/_ApplAI%20Composer.md) into an all embracing **"APPLICATOR" named Sub-Project** for end2end automation.  
+Currently we are thinking about integrating the [ApplAI JobScraper](40%20DEV/S01_SCRAPER/_ApplAI_JobScraper.md) and [ApplAI Composer](40%20DEV/S03_COMPOSER/_ApplAI%20Composer.md) into an all embracing **"APPLICATOR" named Sub-Project** for end2end automation. 
+
+Further we have the idea of an [**AutoApply**](10%20PRODUCT/AutoApply/_AutoApply.md)-called GUI-Componetn job-seekers might plug in to their HomePage and SocialMedia profiles where interested companies and recruiters can insert their eMail Address and the URL of JobOffers to self-generate customized Job-Application's upon the JobSeekers Masterdata. 
 
 ### New business idea: Job-Application Self-Service for Companies
 We are currently thinking about a public WebService where experts who are open for work may upload their SuperCV once, so that RECRUITERS and COMPANIES then can give in their JobOffer-URLs to compile the potential candiate's AI-customized job-application documents permissenles by themselves whenever they want. 
@@ -180,10 +182,7 @@ However we found the "old"  **[JSON Resume](GLOSS/J/JSON%20Resume.md)**-Standard
 
 
 ## Next Steps
-1. **Generate and finalize a reference CV** with the [Reactive Resume WebApp](../../PRIV/_KEY/Assets/Products/Software/R/Reactive%20Resume%20Credentials.md), export the data in [JSON Resume Format](GLOSS/J/JSON%20Resume.md) and then decide how to integrate it into the Overall [ApplAI Project/Framework](_ApplAI%20personal%20Job%20Application%20and%20Management%20Solution.md) or wether to engage with the [JSON Resume Open  Source](GLOSS/J/JSON%20Resume.md) and compile the missing stuff from there. 
-
-2. Finalize the [**Specs for** the personal CV related **SourceData**]()  according to [The HR Open Standards Resume/CV Project](https://learnworkecosystemlibrary.com/initiatives/the-hr-open-standards-resume-cv-project/).
-
+Document the Polishing Skill
 
 # Appendix
 

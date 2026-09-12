@@ -6,11 +6,11 @@
 
 ApplAI's Composer provides a Perplexity skill to **compile a most promising CV and Coverletter** from 
 
-1. The previously [JobScraper](../S01_SCRAPER/_ApplAI_JobScraper.md) archived **JobOffer** from a JobOffer-URL and  
+1. The previously [JobScraper](../S01_SCRAPER/_ApplAI_JobScraper.md) GitHub archived **JobOffer** files. 
 
 2. The [Reactive Resume](../../../../JobSuche/06_TOOLS/R/Reactive%20Resume/_Reactive%20Resume.md) managed **[SuperCV](../S02_GENERATOR/VSC/data/SuperCV/_SuperCVs.md)**.
 
-After syncing your remote GitHub with your local Repo, you will find the generated files in *.md format for manual editing in your *\JOBS\Company-Role-YYMM\APPLICATION*-folder. 
+After syncing your remote GitHub with your local Repo, you will find the generated "Short-CV" and "Cover-Letter" files in *.md format for manual editing in your *\JOBS\Company-Role-YYMM\APPLICATION*-folder. 
 
 ## How it works
 
