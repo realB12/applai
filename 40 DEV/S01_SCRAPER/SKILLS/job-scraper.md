@@ -1,17 +1,17 @@
-# job-scraper (personal Perplexity Skill)
-
-## Meta
-This skill was created September 12th for Perplexity Computer PRO Version by rene.baron@baronsolutions.ch
-
-This Skill can be modified anytime at perplexity.ai/computer/skills as follows:  
-![Where Skills Are Found In Perplexity](./zPIC/WhereSkillsAreFoundInPerplexity.png)
-
-### How to run the skill
-1. Open Perplexity **Computer**
-2. **paste a screenshot** of the job-offer into the prompt.
-3. Then type "scrape joboffer"
-
 ---
+name: job-scraper
+description: "Archive an online job offer as PDF, Markdown, and a screenshot image into the user's jobs-named GitHub repo. Always opens by asking the user for the job-offer URL, the company name, the job role, and to paste a screenshot of the posting. Trigger on 'scrape joboffer'"
+metadata:
+  Author: 'rene.a.baron@gmail.com'
+  Version: '2.0'
+  Creation date: 'September 13th, 2026'
+  Platform: 'Perplexity Computer PRO'
+  Perplexity skill base: 'perplexity.ai/computer/skills'
+  Local path: 'ApplAI\40 DEV\S01_SCRAPER\SKILLS\job-scraper.md'
+  HowtoRun: '1. Open Perplexity **Computer** 2. **paste a screenshot** of the job-offer into the prompt. 3. Then type scrape joboffer'
+---
+
+# job-scraper (personal Perplexity Skill)
 
 ## What it does
 It immediately asks you (rather than assuming from context) for 
@@ -45,8 +45,6 @@ jobs/
         │   └── COMPANY-ROLE-YYMM.png
         └── _COMPANY-ROLE-YYMM-LOG.md
 ```
-
----
 
 ## When to Use This Skill
 Use this skill only when the user types "scrape joboffer" after having posted an screenshot/image of the JobOffer to be scaped into the below defined GitHub hosted files. 

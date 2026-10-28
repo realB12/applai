@@ -3,7 +3,7 @@
 ## What it does
 **Reads the job offer** from my realB12/jobs GitHub Repo as /JOBS/<FileName>-YYMM/OFFER/<FileName>.md **and the SuperCV** form /MASTER/SuperCV/supercv.md).
 
-It iwll asks for a <WORK-START> date before drafting, defaulting to the first workday of the month after next (e.g. today Sept 7 → Nov 2), with your answer worked into both the CV and the cover letter's closing.
+It will asks for a <WORK-START> date before drafting, defaulting to the first workday of the month after next (e.g. today Sept 7 → Nov 2), with your answer worked into both the CV and the cover letter's closing.
 
 Reduces the SuperCV to the 10 most relevant experiences and trims skills to what the offer actually needs, reworking content honestly (no hallucination/overselling/underselling, including flagging seniority or qualification mismatches).
 
@@ -40,8 +40,7 @@ Use when the user wants a job-specific CV and cover letter built from an already
 4. a reference to a JOBS/<FileName>-YYMM folder that already has an OFFER subfolder.
 
 ## Setup
-Use the GitHub CLI via bash with api_credentials=["github"]. Never inspect or print
-credentials.
+Use the GitHub CLI via bash with api_credentials=["github"]. Never inspect or print credentials.
 
 <Subfolder-Name> = <FileName>-YYMM (YYMM = current year+month, e.g. July 2026 → 2607).
 <FileName> = <Subfolder-Name> with the trailing -YYMM cut off.

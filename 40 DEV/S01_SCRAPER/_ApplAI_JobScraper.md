@@ -12,7 +12,6 @@
 
 > Mit dem Perplexit Scraper Skill **wird eine StellenAnzeige durch die Angabe ihrer URL im .md, .pdf und .jpeg Format ins lokale und remote /JOBS/Company-Role-YYMM/OFFER GitHub Repository kopiert**. 
 
-
 ## How to do it 
 1. Open a new **Perplexity-Prompt**
 2. **Copy a screenshot** from the JobOffer to the Prompt

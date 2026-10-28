@@ -2,6 +2,10 @@
 
 <- [ReadMe](README.md)
 
+* Job [**Seeker**](40%20DEV/S00_SEEKER/_ApplAI_JobSeeker.md), 
+[**Scraper**](40%20DEV/S01_SCRAPER/_ApplAI_JobScraper.md), 
+[**Composer**](40%20DEV/S03_COMPOSER/_ApplAI%20Composer.md), [**Polisher**](40%20DEV/S04_POLISHER/_ApplAI%20Polisher.md)
+
 * [**generischer Bewerbungs Prozess**](../../JobSuche/60_OPS/5_Bewerben/BewerbungsProzess.md)
 
 ---
@@ -14,18 +18,17 @@ This document represents the **Single Point of entry (SPE) document** for **what
 ---
 
 ## Current Project STATUS = IMPLEMENTATION 60%
-
-
 ->  **[Current Project STATUS](#project-status) Description** 
 
 -> **[Next Steps](#next-steps)**
 
 
-
 ## Vision Statement
-Automatically **generate a job application resumee and an associated cover-letter** from the job-offer's URL plus the organisational framework (e.g. associated Git Repo) and tasks (e.g "sending the resume") for its efficient follow up and learning from it for next applications.
+Automatically **generate a job application resumee and an associated cover-letter** from the job-offer's URL plus the managerial infrastructure (e.g. associated Git Repo) and tasks (e.g "sending the resume") for its efficient follow up and learning from it for next job applications.
 
-Currently for personal/individual use. With [AutoApply](10%20PRODUCT/AutoApply/_AutoApply.md) offered as a full ServiceInterface in the future.  
+Currently all this project is **for personal/individual use**. 
+
+In the future - currently no plans - we might offer the fully automated Servics as SAS solution or payable AI skill: see the separate **[AutoApply Project](10%20PRODUCT/AutoApply/_AutoApply.md)** for deteails. 
 
 ## Implementation approach
 Although it would have been possible to fully automate the process from giving in the job-Offer URL till sending the such generated application files (Short-CV, Application Letter (for the Recruiter) and the SuperCV for ATS), we keep the following steps as separate Perplexity skills to be manually launched in sequence. This allows partial generation (for cost savings when not going the full circle yet) and manual customization of the final output in between the process. 
@@ -131,28 +134,46 @@ To keep the final CV-Data in YAML format is more consise, easier to read and to 
 Many tools currently are available to translate YAML into JSON and vice versa. 
 
 ## Project STATUS
-First Short-CVs, Cover-Letters and SuperCVs have been sent to real companies. So currently we are waiting for real-world feedback with the current tools at hand. 
+First generagted Short-CVs, Cover-Letters and SuperCVs have been sent to real companies with positive response. 
 
 Currently we are thinking about integrating the [ApplAI JobScraper](40%20DEV/S01_SCRAPER/_ApplAI_JobScraper.md) and [ApplAI Composer](40%20DEV/S03_COMPOSER/_ApplAI%20Composer.md) into an all embracing **"APPLICATOR" named Sub-Project** for end2end automation. 
 
-Further we have the idea of an [**AutoApply**](10%20PRODUCT/AutoApply/_AutoApply.md)-called GUI-Componetn job-seekers might plug in to their HomePage and SocialMedia profiles where interested companies and recruiters can insert their eMail Address and the URL of JobOffers to self-generate customized Job-Application's upon the JobSeekers Masterdata. 
+Have added a [ApplAI JobSeeker](40%20DEV/S00_SEEKER/_ApplAI_JobSeeker.md) Skill to autogenerate a weekly list of best-fit job offers to choose from. 
 
-### New business idea: Job-Application Self-Service for Companies
-We are currently thinking about a public WebService where experts who are open for work may upload their SuperCV once, so that RECRUITERS and COMPANIES then can give in their JobOffer-URLs to compile the potential candiate's AI-customized job-application documents permissenles by themselves whenever they want. 
+Further we have the idea of an [**AutoApply**](10%20PRODUCT/AutoApply/_AutoApply.md)-called  job-seekers GUI-Component to be plugged into a personal HomePage and/or SocialMedia profiles, where interested companies and recruiters may type in their eMailAddress and the URL of their provided JobOffers to immediately get a self-generate CUSTOMIZED Short-CV and Cover letter upon the JobSeekers Masterdata. This spares them the time to call and ask potential candiates to apply for a specific job. 
 
-Life **example**: On LinkedIn I am sharing a link to my personal Homepage, where a recruiter, who has stumbles over my name, can without my permission nor attention just drops his job-offer's URL and his eMail and within seconds will get my CUSTOMIZED Short-CV and CoverLetter demonstrating best fit or not directly into his inbox. 
+## Job-Application Self-Service for Companies
+We are currently thinking about a public WebService where experts who are open for work may upload their ([Reactive Resume](https://rxresu.me) generated SuperCV once, so that RECRUITERS and COMPANIES then can give in their JobOffer-URLs to compile the potential candiate's AI-customized job-application documents anytime without calling and asking potential candidates first. 
 
-So it is no longer the job-seeker looking for companies to apply, but companies self-generating customized job-appliances for persons they just got aware for being potential candidates: upon public contributions in terms of workshops given, podcasts, shared code, excellent social media contributions, articles, projects or ad hoc wherever interesting people are met. 
+**Example**: On my LinkedIn Profile, FaceBook, Instagram, on my personal Homepage and included in every CV and CoverLetter sent, I have positioned my AutoApply-PlugIn (or at least a link to my Homepage where it is hosted), where a recruiter, who has stumbled over my name, can, without my permission nor attention just drop his job-offer's URL and his eMailAddress and within seconds he or she will get my CUSTOMIZED Short-CV and CoverLetter demonstrating best fit or not directly into his or her inbox. 
 
-The key idea behind this is, that for the best match, the probability that a company finds promising candidates upon their currently active real world contributions and impact with much higher precision for a real match, than by waiting for a dream candiate guessing in the wild where to apply and who might never get your (young) company onto his or her radar. 
+So it is no longer the job-seeker looking for companies for appliance, but companies self-generating job-offer customized CVs and CoverLetters of potential candidates they got known from workshops, podcasts, shared code, excellent social media contributions, articles, projects or ad hoc wherever they have met interesting people.
 
-As a side effect the company might test serveral open positions against the same candiate or might just test their job-offer-content whether it will trigger the "right" response with specific "target" candiates in mind offering this service on their homepage. 
+As a side effect, companies might test their job-offers against real candidates whether it will trigger the "right" response for this "target" group, or the company might just test serveral open positions against the same candiate to find out what works best for whom. 
 
-Implementation details include 
-1. the possibility to **offer different agents for different roles** (so on my homepage I have an agent for "engineer" and another for "CTO". 
-2. Letting me know about the process or not  
-3. Fix Payments for every CV generated
-etc. 
+The key idea behind this is, that for the best match, the probability that a company finds promising candidates upon the candidate's proven, public available, real world, hands-on contributions and impact is higher, than just upon generic CVs that might not contain what you are searching for despite the fact, that conadidates have it without mentioning (Especially Senior Job Seekers will limit their skill-set to something reasonalble THEY think what matters and skipping the rest).  
+
+Further, this approach puts recruiters into the driving seat to get profiles whenever they need it from specific candidates whenever THEY want and not just when the potential candiate is "open for work".  
+
+### Implementation details
+
+1. the possibility to **offer different Plugings for different roles** (so on my homepage I have an agent for "engineer" and on LinkedIn another for "CTO". 
+
+2. Optionally the Interface notifies me about interactions such as when a CV was generated upon which JobOffer
+
+3. Optional payments for every recruiter generated CV
+
+### Contstraints
+#### Costs
+Such AI generations cost around 5$ per generation. Not sure if either jobseekers and/or job-offerers will pay/share these costs. 
+
+#### Recruiter verification
+As the Gui-Component is most probably publicly exposed uncontrolled usa might generate excess costs and stopp the service when such costs go beyond (hopefully set) limits. 
+
+A simple approach would be that the generation must be MANUALLY confirmed by the jobseeker upon the given in JobURL and Recruiter-address (killing the any-time argument). 
+
+Further we might limit generation to verified, non anoynmous Internet addresses (CH only) and Captchas for bot exclusions.   
+
 
 
 ### GENERATOR stopped

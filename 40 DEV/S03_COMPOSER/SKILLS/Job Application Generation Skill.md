@@ -7,12 +7,12 @@ This skill expects just one input:
 
 * The **subfolder-name** such as "KLETT-Projektmitarbeit_operative_KI-Projekte-2608" that must exit in the https://github.com/realB12/jobs/tree/main/JOBS path. 
 
-If the inputs is missing, ask the user for it before proceeding.
+If the input is missing, ask the user for it before proceeding.
 
-If the subfolder cannot be found tell the user so and ask for a different sub-folder name. 
+If the subfolder cannot be found ask for a different sub-folder name. 
 
 ## Instructions
-The target repo is the user's jobs repo (default: realB12/jobs, confirm if the user names a different one). All required Files are in /JOBS folder followed by the given in sub-folder name (that again follows the naming convention <FileName>-YYMM, where YYMM is the current year+month (e.g. July 2026 → 2607). 
+The target repo is the user's jobs repo (default: realB12/jobs, confirm if the user names a different one). All required Files are in the /JOBS folder followed by the given in sub-folder name (that again follows the naming convention <FileName>-YYMM, where YYMM is the current year+month (e.g. July 2026 → 2607). 
 
 Create a <FileName> variable by cutting of the -YYMM part of the given in sub-folder name (<Subfolder-Name> = <FileName>-YYMM)
 
